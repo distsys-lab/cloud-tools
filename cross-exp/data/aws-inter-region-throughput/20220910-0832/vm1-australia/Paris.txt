@@ -1,0 +1,10 @@
+Connecting to host 20.211.1.222, port 10000
+[  5] local 10.0.182.59 port 44054 connected to 20.211.1.222 port 10000
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   315 KBytes  2.58 Mbits/sec    0   55.8 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-1.00   sec   315 KBytes  2.58 Mbits/sec    0             sender
+[  5]   0.00-1.00   sec  94.5 KBytes   774 Kbits/sec                  receiver
+
+iperf Done.

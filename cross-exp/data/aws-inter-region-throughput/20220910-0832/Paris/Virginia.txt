@@ -1,0 +1,10 @@
+Connecting to host 13.38.143.213, port 10000
+[  5] local 10.0.116.214 port 35438 connected to 13.38.143.213 port 10000
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  9.71 MBytes  81.4 Mbits/sec    0   3.07 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-1.00   sec  9.71 MBytes  81.4 Mbits/sec    0             sender
+[  5]   0.00-1.08   sec  7.74 MBytes  60.0 Mbits/sec                  receiver
+
+iperf Done.

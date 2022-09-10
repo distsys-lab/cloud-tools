@@ -1,0 +1,10 @@
+Connecting to host 40.89.158.76, port 10000
+[  4] local 10.1.0.4 port 54130 connected to 40.89.158.76 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   526 KBytes  4.31 Mbits/sec    0    112 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec   526 KBytes  4.31 Mbits/sec    0             sender
+[  4]   0.00-1.00   sec   209 KBytes  1.71 Mbits/sec                  receiver
+
+iperf Done.

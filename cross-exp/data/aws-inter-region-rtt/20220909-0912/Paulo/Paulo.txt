@@ -1,0 +1,15 @@
+PING 18.230.101.202 (18.230.101.202) 56(84) bytes of data.
+64 bytes from 18.230.101.202: icmp_seq=1 ttl=63 time=0.160 ms
+64 bytes from 18.230.101.202: icmp_seq=2 ttl=63 time=0.180 ms
+64 bytes from 18.230.101.202: icmp_seq=3 ttl=63 time=0.189 ms
+64 bytes from 18.230.101.202: icmp_seq=4 ttl=63 time=0.166 ms
+64 bytes from 18.230.101.202: icmp_seq=5 ttl=63 time=0.686 ms
+64 bytes from 18.230.101.202: icmp_seq=6 ttl=63 time=0.305 ms
+64 bytes from 18.230.101.202: icmp_seq=7 ttl=63 time=0.179 ms
+64 bytes from 18.230.101.202: icmp_seq=8 ttl=63 time=0.168 ms
+64 bytes from 18.230.101.202: icmp_seq=9 ttl=63 time=0.181 ms
+64 bytes from 18.230.101.202: icmp_seq=10 ttl=63 time=0.176 ms
+
+--- 18.230.101.202 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9220ms
+rtt min/avg/max/mdev = 0.160/0.239/0.686/0.154 ms

@@ -1,0 +1,10 @@
+Connecting to host 13.54.205.59, port 10000
+[  4] local 10.2.0.4 port 40766 connected to 13.54.205.59 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   365 KBytes  2.99 Mbits/sec    0   56.6 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec   365 KBytes  2.99 Mbits/sec    0             sender
+[  4]   0.00-1.00   sec  97.6 KBytes   799 Kbits/sec                  receiver
+
+iperf Done.

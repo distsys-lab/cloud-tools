@@ -1,0 +1,15 @@
+PING 13.38.143.213 (13.38.143.213) 56(84) bytes of data.
+64 bytes from 13.38.143.213: icmp_seq=1 ttl=49 time=1.78 ms
+64 bytes from 13.38.143.213: icmp_seq=2 ttl=49 time=1.80 ms
+64 bytes from 13.38.143.213: icmp_seq=3 ttl=49 time=1.93 ms
+64 bytes from 13.38.143.213: icmp_seq=4 ttl=49 time=1.84 ms
+64 bytes from 13.38.143.213: icmp_seq=5 ttl=49 time=1.75 ms
+64 bytes from 13.38.143.213: icmp_seq=6 ttl=49 time=1.89 ms
+64 bytes from 13.38.143.213: icmp_seq=7 ttl=49 time=1.75 ms
+64 bytes from 13.38.143.213: icmp_seq=8 ttl=49 time=1.93 ms
+64 bytes from 13.38.143.213: icmp_seq=9 ttl=49 time=1.80 ms
+64 bytes from 13.38.143.213: icmp_seq=10 ttl=49 time=1.74 ms
+
+--- 13.38.143.213 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9015ms
+rtt min/avg/max/mdev = 1.741/1.824/1.935/0.078 ms

@@ -1,0 +1,15 @@
+PING 20.194.230.211 (20.194.230.211) 56(84) bytes of data.
+64 bytes from 20.194.230.211: icmp_seq=1 ttl=57 time=2.36 ms
+64 bytes from 20.194.230.211: icmp_seq=2 ttl=57 time=1.86 ms
+64 bytes from 20.194.230.211: icmp_seq=3 ttl=57 time=1.86 ms
+64 bytes from 20.194.230.211: icmp_seq=4 ttl=57 time=2.08 ms
+64 bytes from 20.194.230.211: icmp_seq=5 ttl=57 time=2.09 ms
+64 bytes from 20.194.230.211: icmp_seq=6 ttl=57 time=1.80 ms
+64 bytes from 20.194.230.211: icmp_seq=7 ttl=57 time=2.87 ms
+64 bytes from 20.194.230.211: icmp_seq=8 ttl=57 time=2.13 ms
+64 bytes from 20.194.230.211: icmp_seq=9 ttl=57 time=1.81 ms
+64 bytes from 20.194.230.211: icmp_seq=10 ttl=57 time=1.85 ms
+
+--- 20.194.230.211 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9015ms
+rtt min/avg/max/mdev = 1.804/2.076/2.870/0.316 ms

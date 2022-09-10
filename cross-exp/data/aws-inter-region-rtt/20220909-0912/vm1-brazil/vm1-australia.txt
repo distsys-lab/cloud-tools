@@ -1,0 +1,15 @@
+PING 20.5.124.253 (20.5.124.253) 56(84) bytes of data.
+64 bytes from 20.5.124.253: icmp_seq=1 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=2 ttl=42 time=316 ms
+64 bytes from 20.5.124.253: icmp_seq=3 ttl=42 time=316 ms
+64 bytes from 20.5.124.253: icmp_seq=4 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=5 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=6 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=7 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=8 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=9 ttl=42 time=315 ms
+64 bytes from 20.5.124.253: icmp_seq=10 ttl=42 time=316 ms
+
+--- 20.5.124.253 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 315.306/315.895/316.979/0.895 ms

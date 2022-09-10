@@ -1,0 +1,10 @@
+Connecting to host 20.206.140.227, port 10000
+[  4] local 10.4.0.4 port 37668 connected to 20.206.140.227 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  4.97 MBytes  41.6 Mbits/sec    0   1.11 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec  4.97 MBytes  41.6 Mbits/sec    0             sender
+[  4]   0.00-1.00   sec  2.23 MBytes  18.7 Mbits/sec                  receiver
+
+iperf Done.

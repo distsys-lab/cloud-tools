@@ -1,0 +1,15 @@
+PING 20.43.61.98 (20.43.61.98) 56(84) bytes of data.
+64 bytes from 20.43.61.98: icmp_seq=1 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=2 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=3 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=4 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=5 ttl=29 time=268 ms
+64 bytes from 20.43.61.98: icmp_seq=6 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=7 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=8 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=9 ttl=29 time=267 ms
+64 bytes from 20.43.61.98: icmp_seq=10 ttl=29 time=267 ms
+
+--- 20.43.61.98 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9010ms
+rtt min/avg/max/mdev = 266.928/267.114/267.757/0.226 ms

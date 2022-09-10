@@ -1,0 +1,10 @@
+Connecting to host 13.38.143.213, port 10000
+[  4] local 10.3.0.4 port 39220 connected to 13.38.143.213 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   249 KBytes  2.04 Mbits/sec    0   56.6 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec   249 KBytes  2.04 Mbits/sec    0             sender
+[  4]   0.00-1.00   sec  97.7 KBytes   800 Kbits/sec                  receiver
+
+iperf Done.

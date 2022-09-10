@@ -1,0 +1,10 @@
+Connecting to host 52.253.98.88, port 10000
+[  4] local 10.1.0.4 port 48040 connected to 52.253.98.88 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   218 MBytes  1.83 Gbits/sec  183    609 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec   218 MBytes  1.83 Gbits/sec  183             sender
+[  4]   0.00-1.00   sec   215 MBytes  1.81 Gbits/sec                  receiver
+
+iperf Done.

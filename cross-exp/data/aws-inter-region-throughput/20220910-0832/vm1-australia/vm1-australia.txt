@@ -1,0 +1,10 @@
+Connecting to host 20.211.1.222, port 10000
+[  4] local 10.3.0.4 port 60140 connected to 20.211.1.222 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   170 MBytes  1.43 Gbits/sec  114   2.20 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec   170 MBytes  1.43 Gbits/sec  114             sender
+[  4]   0.00-1.00   sec   166 MBytes  1.40 Gbits/sec                  receiver
+
+iperf Done.

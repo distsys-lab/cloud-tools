@@ -1,0 +1,10 @@
+Connecting to host 34.235.100.84, port 10000
+[  5] local 10.0.50.4 port 60822 connected to 34.235.100.84 port 10000
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   632 KBytes  5.18 Mbits/sec    0    119 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-1.00   sec   632 KBytes  5.18 Mbits/sec    0             sender
+[  5]   0.00-1.14   sec   320 KBytes  2.29 Mbits/sec                  receiver
+
+iperf Done.

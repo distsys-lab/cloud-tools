@@ -1,0 +1,10 @@
+Connecting to host 34.235.100.84, port 10000
+[  4] local 10.4.0.4 port 52934 connected to 34.235.100.84 port 10000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  26.4 MBytes   222 Mbits/sec    0   3.47 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-1.00   sec  26.4 MBytes   222 Mbits/sec    0             sender
+[  4]   0.00-1.00   sec  24.2 MBytes   203 Mbits/sec                  receiver
+
+iperf Done.

@@ -1,0 +1,15 @@
+PING 20.197.190.160 (20.197.190.160) 56(84) bytes of data.
+64 bytes from 20.197.190.160: icmp_seq=1 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=2 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=3 ttl=45 time=185 ms
+64 bytes from 20.197.190.160: icmp_seq=4 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=5 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=6 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=7 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=8 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=9 ttl=45 time=184 ms
+64 bytes from 20.197.190.160: icmp_seq=10 ttl=45 time=184 ms
+
+--- 20.197.190.160 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 184.205/184.434/185.275/0.647 ms
