@@ -6,7 +6,7 @@ if [ $# -lt 1 ]; then
 fi
 
 hostip=$1
-user=ubuntu
+user="$USER"
 
 program_dir=../../bft-smart-mod
 

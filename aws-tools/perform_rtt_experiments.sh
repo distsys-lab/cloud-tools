@@ -16,7 +16,7 @@ ssh_option="-i ~/.ssh/id_rsa -y"
 regions=(`cat my-hosts-list.txt | cut -d ":" -f 1`) #automatic selection from "my-hosts-list.txt"
 region_prefix=bft-
 
-user=ubuntu
+user="$USER"
 
 server_command=ping
 server_option="-c 10"

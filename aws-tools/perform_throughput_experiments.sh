@@ -15,7 +15,7 @@ ssh_option="-i ~/.ssh/id_rsa"
 regions=(`cat my-hosts-list.txt | cut -d ":" -f 1`) #automatic selection from "my-hosts-list.txt"
 region_prefix=bft-
 
-user=ubuntu
+user="$USER"
 
 server_command=iperf3
 server_option="-s -p 10000 -i 0 -D"
