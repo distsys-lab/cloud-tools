@@ -1,3 +1,8 @@
 name_prefix=koya
-image_type=ubuntu-2204-lts-arm64
+image_type=ubuntu-1804-lts
 machine_type=e2-medium
+
+cluster_config=(
+"tokyo,asia-northeast1-a"
+"paris,europe-west9-a"
+)

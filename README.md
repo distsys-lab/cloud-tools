@@ -7,3 +7,6 @@
 ## gcp-tools
 
 ## cross-exp
+
+difference of vpc
+https://zenn.dev/tomot/articles/cb50e7b06ca022

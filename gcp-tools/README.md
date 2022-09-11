@@ -1,3 +1,4 @@
+https://cloud.google.com/sdk/gcloud/reference/compute/instances/create
 install gcloud
 
 https://qiita.com/G-awa/items/e6904b040caa0096fba0
