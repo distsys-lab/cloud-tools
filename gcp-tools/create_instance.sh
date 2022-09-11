@@ -6,5 +6,5 @@ for i in ${cluster_config[@]};
 do
 	zone=`echo $i | cut -d ',' -f 2`
 	tag=`echo $i | cut -d ',' -f 1`
-	echo "gcloud compute instances create "$name_prefix-$tag-instance" --zone $zone --image $image_type --machine-type $machine_type"
+	gcloud compute instances create "$name_prefix-$tag-instance" --zone $zone --image $image_type --machine-type $machine_type
 done

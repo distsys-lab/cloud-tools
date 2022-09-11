@@ -1,5 +1,5 @@
 name_prefix=koya
-image_type=ubuntu-1804-lts
+image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20220901
 machine_type=e2-medium
 
 cluster_config=(
