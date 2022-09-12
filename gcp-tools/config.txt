@@ -1,8 +1,12 @@
 name_prefix=koya
 image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20220901
 machine_type=e2-medium
+ssh_file_path=~/.ssh/id_rsa
 
 cluster_config=(
 "tokyo,asia-northeast1-a"
 "paris,europe-west9-a"
+"virginia,us-east4-a"
+"sydney,australia-southeast1-a"
+"paulo,southamerica-east1-a"
 )
