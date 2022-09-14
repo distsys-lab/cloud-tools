@@ -14,5 +14,8 @@ $sbin/vnet.sh $1
 # Creates VMs
 $sbin/vm.sh $1
 
+# Creates Rule
+$sbin/nsg.sh $1
+
 # Lists VM IPs
 $sbin/vm-ip.sh $1

@@ -51,7 +51,7 @@ do
 
 		echo ">>> $i-$j: `now`"
 		# start client
-		ssh -oStrictHostKeyChecking=no $ssh_option $client_ip -l $client_user $client_command $server_ip $client_option > $output 
+		ssh -oStrictHostKeyChecking=no $ssh_option $client_ip -l $client_user $client_command $server_ip $client_option > $output
 	done
 
 	# cleanup iperf daemon

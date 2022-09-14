@@ -1,3 +1,2 @@
 ubuntu:Virginia:54.145.245.63
-ubuntu:vm1-brazil:20.226.79.118
-koya:tokyo:34.146.101.39
+ubuntu:Sydney:52.64.65.44

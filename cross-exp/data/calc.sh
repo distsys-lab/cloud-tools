@@ -1,7 +1,7 @@
 #!/bin/bash
 
-regions=(Paris  Paulo  Sydney  Tokyo  Virginia  vm1-france  vm1-brazil  vm1-australia  vm1-japan  vm1-us)
-
+regions=(Paris  Paulo  Sydney  Tokyo  Virginia  vm1-france  vm1-brazil  vm1-australia  vm1-japan  vm1-us paris  paulo  sydney  tokyo  virginia)
+cd $1
 echo -n ","
 for i in ${regions[@]};
 do

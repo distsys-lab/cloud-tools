@@ -86,3 +86,16 @@ gen_vnet_peer_name() {
   echo "peer-$1-$2"
 }
 
+gen_nsg_name() {
+  if [ -z $1 ] || [ -z $2 ]; then
+    echo "Missing nsg name parameter(s)."; exit 1
+  fi
+  echo "nsg$1-$2"
+}
+
+gen_rule_name() {
+  if [ -z $1 ] || [ -z $2 ]; then
+    echo "Missing rule name parameter(s)."; exit 1
+  fi
+  echo "rule$1-$2"
+}
