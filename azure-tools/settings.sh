@@ -14,7 +14,7 @@ vnet_subnet_name="Subnet1"
 ## is configured on Azure for VM logins.
 vm_public_key="$HOME/.ssh/id_rsa.pub"
 ## VM username
-vm_username="$USER"
+vm_username="ubuntu"
 ## VM image options: az vm image list --output table
 ## Uses the value under Urn or UrnAlias
 vm_image="UbuntuLTS"
@@ -43,9 +43,15 @@ vm_no_wait="false"
 
 ## azure-location customized-tag vnet_ip number-of-vms
 cluster_config=(
-"eastus2      eastus2       10.1.0.0    2"
-"westus       westus        10.2.0.0    1"
+#"eastus2      eastus2       10.1.0.0    2"
+#"westus       westus        10.2.0.0    1"
 #"westus2      westus2       10.3.0.0    1"
+"japaneast	japan	10.1.0.0	1"
+"brazilsouth	brazil	10.2.0.0	1"
+"australiaeast	australia	10.3.0.0	1"
+"eastus	us	10.4.0.0	1"
+"francecentral	france	10.5.0.0	1"
+
 )
 
 #### A list of Azure locations from location.sh ####
