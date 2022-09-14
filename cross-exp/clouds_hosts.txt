@@ -1,3 +1,3 @@
-ubuntu:Paulo:54.94.95.16
-ubuntu:vm1-us:20.163.213.204
+ubuntu:Virginia:54.145.245.63
+ubuntu:vm1-brazil:20.226.79.118
 koya:tokyo:34.146.101.39
