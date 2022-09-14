@@ -1,0 +1,15 @@
+PING 34.146.101.39 (34.146.101.39) 56(84) bytes of data.
+64 bytes from 34.146.101.39: icmp_seq=1 ttl=48 time=269 ms
+64 bytes from 34.146.101.39: icmp_seq=2 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=3 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=4 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=5 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=6 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=7 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=8 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=9 ttl=48 time=268 ms
+64 bytes from 34.146.101.39: icmp_seq=10 ttl=48 time=268 ms
+
+--- 34.146.101.39 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 268.285/268.410/269.000/0.201 ms
