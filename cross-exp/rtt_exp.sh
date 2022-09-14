@@ -16,8 +16,6 @@ ssh_option="-i ~/.ssh/id_rsa -y"
 regions=(`cat $hosts_list | cut -d ":" -f 1`) #automatic selection from "my-hosts-list.txt"
 region_prefix=bft-
 
-user=ubuntu
-
 server_command=ping
 server_option="-c 10"
 
@@ -36,6 +34,7 @@ for i in "${regions[@]}"
 do
 
 	server_ip=`cat $hosts_list | grep $i | cut -d ':' -f 2`
+	user=`cat clouds_hosts.txt | grep $server_ip | cut -d ':' -f 1`
 	mkdir -p $output_dir/$i
 
 	echo ">> $i-Region-Start: `now`"
