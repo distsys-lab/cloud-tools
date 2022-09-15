@@ -6,7 +6,7 @@ do
 	echo "ubuntu:$line"
 done
 
-tail -n +4 azure-tools/vm.ip | sed -e 's/  */:/g' | cut -d ':' -f 1,3 | while read line
+tail -n +4 azure-tools/vm.ip | sed -e 's/  */:/g' | cut -d ':' -f 1,2 | while read line
 do
 	echo "ubuntu:$line"
 done

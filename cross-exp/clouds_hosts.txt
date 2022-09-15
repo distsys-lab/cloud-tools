@@ -1,2 +1,15 @@
 ubuntu:Virginia:54.145.245.63
 ubuntu:Sydney:52.64.65.44
+ubuntu:Tokyo:54.199.169.157
+ubuntu:Paris:13.39.39.187
+ubuntu:Paulo:54.94.95.16
+ubuntu:vm1-us:20.163.242.167
+ubuntu:vm1-japan:20.89.91.132
+ubuntu:vm1-brazil:191.232.49.128
+ubuntu:vm1-australia:20.213.86.30
+ubuntu:vm1-france:20.216.135.144
+koya:tokyo:34.146.101.39
+koya:virginia:34.86.154.18
+koya:sydney:34.151.88.163
+koya:paulo:34.151.209.245
+koya:paris:34.155.37.75
