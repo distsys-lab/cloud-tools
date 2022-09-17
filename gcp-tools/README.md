@@ -1,3 +1,18 @@
+## Prerequisites
+### How to install gcloud
+- https://qiita.com/G-awa/items/e6904b040caa0096fba0
+- https://cloud.google.com/sdk/docs/install
+
+### Check possible configurations
+```
+gcloud compute zones list > available_zone.txt
+gcloud compute images list > available_image.txt
+gcloud compute machine-types list > available_machine.txt
+```
+
+## Description
+The configuration of these tools is written in config.txt as follows. You can modify them as you want.
+```
 # Set image type. You can chose from available_image.txt
 image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20220901
 
@@ -18,4 +33,7 @@ cluster_config=(
 "sydney,australia-southeast1-a"
 "paulo,southamerica-east1-a"
 )
+```
 
+
+### How to create instance
