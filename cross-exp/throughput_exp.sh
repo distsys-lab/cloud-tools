@@ -19,7 +19,7 @@ server_command=iperf3
 server_option="-s -p 10000 -i 0 -D"
 
 client_command="iperf3 -c"
-client_option="-p 10000 -t 1"
+client_option="-p 10000 -t 10"
 
 now() {
 	echo -n `date +%s` `date +"%F %H:%M:%S %:z"`
