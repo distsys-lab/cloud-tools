@@ -36,4 +36,31 @@ cluster_config=(
 ```
 
 
-### How to create instance
+### How to operate the instance
+After setting cluster_config in config.txt, you can operate the instance by entering the following command.
+
+**create and start**
+```
+./create_all_instances.sh
+```
+
+**delete**
+```
+./delete_all_instances.sh
+```
+**stop**
+```
+./stop_all_instances.sh
+```
+
+**restart**
+```
+./start_all_instances.sh
+```
+
+### Experiment preparation
+```
+./vm-ip.sh > vm.ip
+./set_firewall_rules.sh
+```
+
