@@ -1,4 +1,5 @@
 # cloud-tools
+cloud-tools has scripts to manipulate many instances of AWS, Azure, and GCP and an experimental tool to measure RTT and Throughput between each instance.
 
 ## [aws-tools](https://github.com/distsys-lab/aws-tools)
 These tools provide a variety of functions for managing many instances of aws in many regions at once.
@@ -12,3 +13,5 @@ These tools provide a variety of functions for managing many instances of GCP in
 See [gcp-tools](https://github.com/distsys-lab/cloud-tools/tree/main/gcp-tools) in this repository for instructions.
 
 ## cross-exp
+The tool measures RTT and Throughput between instances deployed in various clouds.
+See [gcp-tools](https://github.com/distsys-lab/cloud-tools/tree/main/cross-exp) in this repository for instructions.
