@@ -19,4 +19,4 @@ Enter the following commands after you have finished setting up the instances yo
 ./exp.sh
 ```
 
-Experimental data is stored in data/.
+Experimental data is stored in `data/`.
