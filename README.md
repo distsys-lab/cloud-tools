@@ -14,4 +14,4 @@ See [gcp-tools](https://github.com/distsys-lab/cloud-tools/tree/main/gcp-tools) 
 
 ## cross-exp
 The tool measures RTT and Throughput between instances deployed in various clouds.
-See [gcp-tools](https://github.com/distsys-lab/cloud-tools/tree/main/cross-exp) in this repository for instructions.
+See [cross-exp](https://github.com/distsys-lab/cloud-tools/tree/main/cross-exp) in this repository for instructions.
