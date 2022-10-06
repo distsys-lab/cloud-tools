@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd ..
 
-cat aws-tools/my-hosts-list.txt | while read line
+cat aws-tools/my-hosts-list.txt | sed s/=/:/g | while read line
 do
 	echo "ubuntu:$line"
 done
