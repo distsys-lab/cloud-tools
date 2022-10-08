@@ -7,7 +7,7 @@ hosts_list="clouds_hosts.txt"
 export TZ=UTC
 
 # results will be stored here
-base_dir=data/aws-inter-region-throughput
+base_dir=data/throughput
 
 ssh_option="-i ~/.ssh/id_rsa -y"
 
