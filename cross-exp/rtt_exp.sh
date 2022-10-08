@@ -8,8 +8,7 @@ hosts_list="clouds_hosts.txt"
 export TZ=UTC
 
 # results will be stored here
-base_dir=data/aws-inter-region-rtt
-
+base_dir=data/rtt
 ssh_option="-i ~/.ssh/id_rsa -y"
 
 #regions=(ohio virginia california oregon mumbai seoul singapore sydney tokyo canada frankfurt ireland london saopaulo)

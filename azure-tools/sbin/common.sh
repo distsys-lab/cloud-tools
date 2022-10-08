@@ -62,7 +62,7 @@ gen_vm_name() {
   if [ -z $1 ] || [ -z $2 ]; then
     echo "Missing vm name parameter(s)."; exit 1
   fi
-  echo "vm$1-$2"
+  echo "$2" #"vm$1-$2"
 }
 
 gen_dns_name() {

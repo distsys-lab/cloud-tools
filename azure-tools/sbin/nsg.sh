@@ -46,9 +46,10 @@ do
         --resource-group ${resource_group_name} \
         --nsg-name  ${nsg_name} \
         --name ${rule_name} \
-        --protocol ICMP \ 
+        --protocol ICMP \
         --priority 1501 \
         --destination-port-range '*' "
     log "Executing: $cmd"
+    run_cmd $cmd
   done
 done

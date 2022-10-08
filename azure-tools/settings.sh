@@ -46,11 +46,11 @@ cluster_config=(
 #"eastus2      eastus2       10.1.0.0    2"
 #"westus       westus        10.2.0.0    1"
 #"westus2      westus2       10.3.0.0    1"
-"japaneast	japan	10.1.0.0	1"
-"brazilsouth	brazil	10.2.0.0	1"
-"australiaeast	australia	10.3.0.0	1"
-"eastus	us	10.4.0.0	1"
-"francecentral	france	10.5.0.0	1"
+"japaneast  tokyo   10.1.0.0	1"
+"brazilsouth    paulo	10.2.0.0	1"
+"australiaeast	sydney	10.3.0.0	1"
+"eastus virginia	10.4.0.0	1"
+"francecentral	paris	10.5.0.0	1"
 
 )
 
