@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 for i in `cat my-hosts-list.txt | cut -d ":" -f 2`
 do

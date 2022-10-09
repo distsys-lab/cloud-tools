@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #set -x
 #hosts_list=`cat config.txt | grep '^hosts_list' | cut -d '=' -f 2-`

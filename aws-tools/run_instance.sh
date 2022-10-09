@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # this script creates a instance on the region specified by a argument,
 # lease a elastic IP, and assign the IP to the instance.

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "StartTime -----> `date`"
 ./start_instances_on_all_regions.sh

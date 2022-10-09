@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 for i in `./list_instances_on_all_regions.sh`
 do

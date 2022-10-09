@@ -1,0 +1,3 @@
+#global_configを読み込む
+#cluster_configに従って各クラウドツールに命令する
+#

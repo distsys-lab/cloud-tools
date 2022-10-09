@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 for i in `aws ec2 describe-regions | jq -r '.Regions[].RegionName'`
 do
