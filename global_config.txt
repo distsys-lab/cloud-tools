@@ -1,0 +1,31 @@
+# Global config
+
+# Resource Management Name
+resource_name_prefix="test-"
+
+# SSH config
+ssh_key_path="$HOME/.ssh/id_rsa.pub"
+ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
+
+# Cluster config
+cluster_config=(
+    #"cloud, region, number
+    "aws,tokyo,1"
+    "aws,paris,1"
+    "azure,virginia,1"
+    "gcp,sydney,1"
+    "gcp,paulo,1"
+)
+
+### List of available regions ###
+#tokyo
+#paris
+#virginia
+#sydney
+#paulo
+
+
+### List of available Cloud Service Provider ###
+#aws
+#azure
+#gcp
