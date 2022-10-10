@@ -1,7 +1,7 @@
 # Global config
 
 # Resource Management Name
-resource_name_prefix="test-"
+resource_name_prefix=test-
 
 # SSH config
 ssh_key_path="$HOME/.ssh/id_rsa.pub"
@@ -10,7 +10,7 @@ ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 # Cluster config
 cluster_config=(
     #"cloud, region, number"
-    "gcp,Tokyo"
+    "aws,Virginia"
 )
 
 ### List of available regions ###

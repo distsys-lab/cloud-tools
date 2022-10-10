@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [ $# -lt 2 ]; then
->---echo 'usage: region-name friendly-name'
->---exit 1
+	echo 'usage: region-name friendly-name'
+	exit 1
 fi
 
 is_dryrun=''
@@ -21,6 +21,7 @@ for i in $vpcs
 do
 	echo vpc id: $i
 done
+
 
 # delete security groups
 gn=${name_prefix}${name}-sg
