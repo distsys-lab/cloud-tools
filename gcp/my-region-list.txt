@@ -1,0 +1,2 @@
+australia-southeast1 Sydney, Australia, APAC
+southamerica-east1 Osasco, São Paulo, Brazil, South America

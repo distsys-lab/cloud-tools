@@ -1,0 +1,76 @@
+DisplayName               Name                 Region
+------------------------  -------------------  ---------------
+East US                   eastus               Virginia
+South Central US          southcentralus       Texas
+West US 2                 westus2              Washington
+West US 3                 westus3              Phoenix
+Australia East            australiaeast        New South Wales
+Southeast Asia            southeastasia        Singapore
+North Europe              northeurope          Ireland
+Sweden Central            swedencentral        Gävle
+UK South                  uksouth              London
+West Europe               westeurope           Netherlands
+Central US                centralus            Iowa
+South Africa North        southafricanorth     Johannesburg
+Central India             centralindia         Pune
+East Asia                 eastasia             Hong Kong
+Japan East                japaneast            Tokyo, Saitama
+Korea Central             koreacentral         Seoul
+Canada Central            canadacentral        Toronto
+France Central            francecentral        Paris
+Germany West Central      germanywestcentral   Frankfurt
+Norway East               norwayeast           Norway
+Switzerland North         switzerlandnorth     Zurich
+UAE North                 uaenorth             Dubai
+Brazil South              brazilsouth          Sao Paulo State
+East US 2 EUAP            eastus2euap
+Qatar Central             qatarcentral         Doha
+Central US (Stage)        centralusstage
+East US (Stage)           eastusstage
+East US 2 (Stage)         eastus2stage
+North Central US (Stage)  northcentralusstage
+South Central US (Stage)  southcentralusstage
+West US (Stage)           westusstage
+West US 2 (Stage)         westus2stage
+Asia                      asia
+Asia Pacific              asiapacific
+Australia                 australia
+Brazil                    brazil
+Canada                    canada
+Europe                    europe
+France                    france
+Germany                   germany
+Global                    global
+India                     india
+Japan                     japan
+Korea                     korea
+Norway                    norway
+Singapore                 singapore
+South Africa              southafrica
+Switzerland               switzerland
+United Arab Emirates      uae
+United Kingdom            uk
+United States             unitedstates
+United States EUAP        unitedstateseuap
+East Asia (Stage)         eastasiastage
+Southeast Asia (Stage)    southeastasiastage
+North Central US          northcentralus       Illinois
+West US                   westus               California
+Jio India West            jioindiawest         Jamnagar
+Central US EUAP           centraluseuap
+West Central US           westcentralus        Wyoming
+South Africa West         southafricawest      Cape Town
+Australia Central         australiacentral     Canberra
+Australia Southeast       australiasoutheast   Victoria
+Japan West                japanwest            Osaka
+Jio India Central         jioindiacentral      Nagpur
+Korea South               koreasouth           Busan
+South India               southindia           Chennai
+West India                westindia            Mumbai
+Canada East               canadaeast           Quebec
+France South              francesouth          Marseille
+Germany North             germanynorth         Berlin
+Switzerland West          switzerlandwest      Geneva
+UK West                   ukwest               Cardiff
+UAE Central               uaecentral           Abu Dhabi
+Brazil Southeast          brazilsoutheast      Rio
