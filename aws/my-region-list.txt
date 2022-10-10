@@ -1,0 +1,1 @@
+us-east-1:us-east-1a:Virginia:Not required
