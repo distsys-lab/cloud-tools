@@ -9,7 +9,8 @@ ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 
 # Cluster config
 cluster_config=(
-    #"cloud, region, number
+    #"cloud, region, number"
+    "gcp,Tokyo"
 )
 
 ### List of available regions ###
