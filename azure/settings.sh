@@ -1,3 +1,4 @@
+source ./cluster_config.sh
 ## Resource group settings
 resource_group_name="sample-cluster"
 ## Location options: az account list-locations --output table
@@ -50,12 +51,12 @@ vm_no_wait="false"
 #
 #echo "${cluster_config[1]}"
 #
-cluster_config=()
-while read line
-do
-    l=`echo $line | sed -e 's/ /\t/g'`
-    cluster_config+=("$l")
-done < my-region-list.txt
+#cluster_config=()
+#while read line
+#do
+#    l=`echo $line | sed -e 's/ /\t/g'`
+#    cluster_config+=("$l")
+#done < my-region-list.txt
 
 #
 ### A list of Azure locations from location.sh ####
