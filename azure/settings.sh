@@ -41,14 +41,24 @@ vm_dns_suffix="cloudapp.azure.com"
 ## Azure CLI.
 vm_no_wait="false"
 
-## azure-location customized-tag vnet_ip number-of-vms
-cluster_config=(
-"eastus2      eastus2       10.1.0.0    2"
-"westus       westus        10.2.0.0    1"
+# azure-location customized-tag vnet_ip number-of-vms
+#cluster_config=(
+#"eastus2      eastus2       10.1.0.0    2"
+#"westus       westus        10.2.0.0    1"
 #"westus2      westus2       10.3.0.0    1"
-)
+#)
+#
+#echo "${cluster_config[1]}"
+#
+cluster_config=()
+while read line
+do
+    l=`echo $line | sed -e 's/ /\t/g'`
+    cluster_config+=("$l")
+done < my-region-list.txt
 
-#### A list of Azure locations from location.sh ####
+#
+### A list of Azure locations from location.sh ####
 ### Asia-Pacific
 #eastasia
 #southeastasia

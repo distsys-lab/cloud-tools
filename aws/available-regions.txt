@@ -1,17 +1,5 @@
-eu-north-1:eu-north-1a:Stockholm:Not required
-ap-south-1:ap-south-1a:Mumbai:Not required
 eu-west-3:eu-west-3a:Paris:Not required
-eu-west-2:eu-west-2a:London:Not required
-eu-west-1:eu-west-1a:Ireland:Not required
-ap-northeast-3:ap-northeast-3a:Osaka:Not required
-ap-northeast-2:ap-northeast-2a:Seoul:Not required
 ap-northeast-1:ap-northeast-1a:Tokyo:Not required
 sa-east-1:sa-east-1a:Paulo:Not required
-ca-central-1:ca-central-1a:Central:Not required
-ap-southeast-1:ap-southeast-1a:Singapore:Not required
 ap-southeast-2:ap-southeast-2a:Sydney:Not required
-eu-central-1:eu-central-1a:Frankfurt:Not required
 us-east-1:us-east-1a:Virginia:Not required
-us-east-2:us-east-2a:Ohio:Not required
-us-west-1:us-west-1a:California:Not required
-us-west-2:us-west-2a:Oregon:Not required

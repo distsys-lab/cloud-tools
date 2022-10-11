@@ -13,4 +13,6 @@ source ./global_config.txt
 #cd ..
 
 cd azure 
+./sbin/cluster.sh setting.sh
+cd ..
 

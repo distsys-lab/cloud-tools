@@ -6,4 +6,4 @@ for i in ${regions[@]};
 do
     region=`echo $i | cut -d ":" -f 1`
     echo $i:`./identify_region.sh $region | cut -d "(" -f 2 | cut -d ")" -f 1`
-done | awk -F ':' '!colname[$3]++{print}' > available-regions.txt
+done | awk -F ':' '!colname[$3]++{print}'
