@@ -12,7 +12,13 @@ source ./global_config.txt
 #./create_and_run_instances_on_all_regions.sh
 #cd ..
 
-cd azure 
-./sbin/cluster.sh setting.sh
+#cd azure 
+#./sbin/create_cluster.sh setting.sh
+#cd ..
+
+cd azure
+
 cd ..
+
+
 

@@ -20,8 +20,6 @@ do
   dc_vnet_name=`gen_vnet_name ${c[1]}`
   vm_num=${c[3]}
 
-  az network nsg rule create --resource-group testing-cluster --nsg-name vm1-franceNSG --name koys --protocol tcp --priority 1001 --destination-port-range 10000
-
   for i in `seq $vm_num`
   do
     nsg_name=`gen_nsg_name $i ${c[1]}`
@@ -42,6 +40,13 @@ do
     nsg_name=`gen_nsg_name $i ${c[1]}`
     rule_name=`gen_rule_name icmp ${c[1]}`
     log "Creating VM $vm_name at location ${dc_location} in resource group ${resource_group_name}"
+    cmd="az network nsg rule create \
+        --resource-group ${resource_group_name} \
+        --nsg-name  ${nsg_name} \
+        --name ${rule_name} \
+        --protocol ICMP \
+        --priority 1501 \
+        --destination-port-range '*' "
     cmd="az network nsg rule create \
         --resource-group ${resource_group_name} \
         --nsg-name  ${nsg_name} \
