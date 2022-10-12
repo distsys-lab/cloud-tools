@@ -1,3 +1,0 @@
-East US                   eastus               Virginia
-Japan East                japaneast            Tokyo, Saitama
-Brazil South              brazilsouth          Sao Paulo State

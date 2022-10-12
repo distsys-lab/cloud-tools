@@ -49,11 +49,15 @@ vm_no_wait="false"
 #)
 cluster_config=()
 cnt=1
-for i in `cat my-region-list.txt | sed -e 's/\s\s\s*/:/g' | cut -d ":" -f 2`
+while read line
 do
-    cluster_config+=("$i $i 10.$cnt.0.0 1")
+    location=`echo $line | cut -d ":" -f 1`
+    tag=`echo $line | cut -d ":" -f 2`
+    cluster_config+=("$location $tag 10.$cnt.0.0 1")
     ((cnt++))
-done
+done < my-region-list.txt
+
+#echo "${cluster_config[1]}"
 
 ### A list of Azure locations from location.sh ####
 ### Asia-Pacific

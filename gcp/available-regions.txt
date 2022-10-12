@@ -1,5 +1,5 @@
-asia-northeast1 Tokyo, Japan, APAC
-australia-southeast1 Sydney, Australia, APAC
-europe-west9 Paris, France, Europe
-southamerica-east1 Osasco, São Paulo, Brazil, South America
-us-east4 Ashburn, Virginia, North America
+tokyo,asia-northeast1-a
+paris,europe-west9-a
+virginia,us-east4-a
+sydney,australia-southeast1-a
+paulo,southamerica-east1-a
