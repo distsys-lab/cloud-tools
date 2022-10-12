@@ -1,5 +1,5 @@
 # Set image type. You can chose from available_image.txt
-image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20220901
+image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-arm64-v20220927
 
 # Set machin type. You can chose from available_machine.txt
 machine_type=e2-medium
@@ -19,13 +19,9 @@ ssh_file_path=~/.ssh/id_rsa
 #"paulo,southamerica-east1-a"
 #)
 cluster_config=()
-cnt=1
 while read line
 do
-    location=`echo $line | cut -d "," -f 1`
-    tag=`echo $line | cut -d "," -f 2`
-    cluster_config+=("$tag $location")
-    ((cnt++))
+    cluster_config+=($line)
 done < my-region-list.txt
 
-#echo "${cluster_config[1]}"
+#echo "${cluster_config[@]}"
