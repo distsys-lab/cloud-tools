@@ -48,8 +48,15 @@ vm_no_wait="false"
 #"westus       westus        10.2.0.0    1"
 #"westus2      westus2       10.3.0.0    1"
 #)
-#
+##
 #echo "${cluster_config[1]}"
+cluster_config=()
+cnt=1
+for i in `cat my-region-list.txt | sed -e 's/\s\s\s*/:/g' | cut -d ":" -f 2`
+do
+    cluster_config+=("$i $i 10.$cnt.0.0 1")
+    ((cnt++))
+done
 #
 #cluster_config=()
 #while read line
