@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
-
-group_name=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
+source ./config.sh
+regions=$region_list
+group_name=$name_prefix
 filter="--filters Name=\"tag:Group\",Values=\"$group_name\""
 if [ $# -ge 1 -a x$1 = xany ]; then
 	filter=

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
+source ./config.sh
 IFS=$'
 '
 
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
+regions=$region_list
 
 for i in `cat $regions`
 do

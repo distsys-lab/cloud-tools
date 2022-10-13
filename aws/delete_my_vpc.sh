@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+source ./config.sh
 if [ $# -lt 2 ]; then
 >---echo 'usage: region-name friendly-name'
 >---exit 1
@@ -8,8 +8,8 @@ fi
 is_dryrun=''
 
 name=$2
-name_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
-gruop=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
+name_prefix=$name_prefix
+group=$name_prefix
 
 region=$1
 option="--region $region --output json"

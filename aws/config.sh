@@ -1,3 +1,4 @@
+source ../global_config.txt
 # this prefix will be added to all resources that will be created
 name_prefix=my-bft
 # the name of a key pair that will be created

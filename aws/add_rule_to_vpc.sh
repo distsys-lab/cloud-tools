@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+source ./config.sh
 if [ $# -lt 2 ]; then
 	echo 'usage: region-name friendly-name'
 	exit 1
@@ -8,7 +8,7 @@ fi
 region=$1
 location=$2
 option="--region $region --output json"
-name_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
+name_prefix=$name_prefix
 
 sg_name="$name_prefix-bft-$location-sg"
 sgid=`aws ec2 $option describe-security-groups | jq ".SecurityGroups[] | select(.GroupName == \"$sg_name\") | .GroupId" | sed 's/"//g'`

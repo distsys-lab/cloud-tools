@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 #set -x
-source ./config.txt
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2`
+source ./config.sh
+regions=$region_list
 
 build_date=`date +%Y-`
 search_words_prefix=$os_image_type

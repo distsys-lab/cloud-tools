@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
-regions=`cat config.txt | grep '^region_list' | cut -d '=' -f 2-`
-images=`cat config.txt | grep '^image_list' | cut -d '=' -f 2-`
-
+source ./config.sh
+regions=$region_list
+images=$image_list
 for r in `cat $regions | cut -d : -f 1`
 do
 	ami=`grep $r $images | cut -d : -f 2`

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+source ./config.sh
 # this script creates a instance on the region specified by a argument,
 # lease a elastic IP, and assign the IP to the instance.
 
@@ -12,16 +12,15 @@ region=$1
 option="--region $region --output json"
 
 name=$2
-name_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
-group=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
-
+name_prefix=$name_prefix
+group=$name_prefix
 image_id=$3
 
-instance_type=`cat config.txt | grep '^instance_type' | cut -d '=' -f 2-`
+instance_type=$instance_type
 
 # pre condition: public key, security group, and subnet must have been
 # created before running this script
-key_name=`cat config.txt | grep '^keypair_name' | cut -d '=' -f 2-`
+key_name=$keypair_name
 sg_name="$name_prefix$name-sg"
 subnet_name="$name_prefix$name-subnet"
 

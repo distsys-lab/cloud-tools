@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
-
+source ./config.sh
 if [ $# -lt 2 ]; then
 	echo 'usage: region-name friendly-name'
 	exit 1
 fi
 
 name=$2
-name_prefix=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
-group=`cat config.txt | grep '^name_prefix' | cut -d '=' -f 2-`
+name_prefix=$name_prefix
+group=$name_prefix
 
 region=$1
 option="--region $region --output json"
 
 subnet="10.0.0.0/16"
-keyname=`cat config.txt | grep '^keypair_name' | cut -d '=' -f 2-`
-pubkey_path=`cat config.txt | grep '^pubkey_path' | cut -d '=' -f 2-`
+keyname=$keypair_name
+pubkey_path=$pubkey_path
 
 echo create a vpc
 vpcid=`aws ec2 $option create-vpc --cidr-block $subnet --no-amazon-provided-ipv6-cidr-block --instance-tenancy default | jq .Vpc.VpcId | sed 's/"//g'`
