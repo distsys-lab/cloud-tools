@@ -1,10 +1,19 @@
 source ../global_config.txt
 # this prefix will be added to all resources that will be created
 name_prefix=my-bft
+if [ -z $resource_name_prefix ]; then
+    name_prefix=$resource_name_prefix
+fi
 # the name of a key pair that will be created
 keypair_name=my-keypair
+if [ -z $resource_name_prefix ]; then
+    keypair_name=$resource_name_prefix
+fi
 # the path to your public key, which will be used as your aws key pair
 pubkey_path=$HOME/.ssh/id_rsa.pub
+if [ -z $ssh_pubkey_path ]; then
+    keypair_name=$ssh_pubkey_path
+fi
 # instance type
 instance_type=t3.micro
 # OS Image type
