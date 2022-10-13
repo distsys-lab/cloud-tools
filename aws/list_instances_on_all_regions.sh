@@ -11,8 +11,17 @@ fi
 for r in `cat $regions | cut -d : -f 1`
 do
 	city=`cat $regions | grep $r | cut -d : -f 3`
-	instance=`aws --region $r ec2 describe-instances $filter | \
-		jq ".Reservations[].Instances[].InstanceId,.Reservations[].Instances[].PublicIpAddress,.Reservations[].Instances[].State.Name" | \
+	instances_state=`aws --region $r ec2 describe-instances $filter | \
+		jq ".Reservations[].Instances[].State.Name" | \
 		sed 's/"//g' | xargs | sed 's/ /:/g'`
-	echo $r:$city:$instance
+	instances_id=`aws --region $r ec2 describe-instances $filter | \
+		jq ".Reservations[].Instances[].InstanceId" | \
+		sed 's/"//g' | xargs | sed 's/ /:/g'`
+	index=1
+	for i in `echo $instances_id | sed 's/:/\n/g'`
+	do
+		state=`echo $instances_state | cut -d ":" -f $index`
+		((index++))
+		echo $r:$city:$i:$state
+	done
 done

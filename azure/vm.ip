@@ -1,0 +1,4 @@
+2022年 10月 13日 木曜日 13:22:37 JST: Executing: az vm list-ip-addresses   --resource-group sample-cluster   --output table
+VirtualMachine    PublicIPAddresses    PrivateIPAddresses
+----------------  -------------------  --------------------
+Tokyo             20.210.252.77        10.1.0.4

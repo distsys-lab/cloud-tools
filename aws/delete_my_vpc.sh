@@ -34,7 +34,18 @@ do
 		aws ec2 $option delete-internet-gateway --internet-gateway-id $j $is_dryrun
 	done
 done
-
+#
+# delete security groups
+for i in $vpcs
+do
+	sgs=`aws ec2 $option describe-security-groups --filters Name=vpc-id,Values=$i | jq -r .SecurityGroups[].GroupId`
+	for j in $sgs
+	do
+		echo delete segurity group $j for vpc $i
+		aws ec2 $option delete-security-group --group-id $j $is_dryrun
+	done
+done
+#
 # delete subnets
 for i in $vpcs
 do
@@ -46,17 +57,7 @@ do
 	done
 done
 
-# delete security groups
-gn=${name_prefix}${name}-sg
-sgs=`aws ec2 $option describe-security-groups --filters Name=group-name,Values=$gn | jq -r .SecurityGroups[].GroupId`
-for i in $sgs
-do
-	echo delete segurity group: $i
-	aws ec2 $option delete-security-group --group-id $i $is_dryrun
-done
-
-
-## disassociate route tables
+# disassociate route tables
 #for i in $vpcs
 #do
 #	as=`aws ec2 $option describe-route-tables --filters Name=vpc-id,Values=$i | jq -r .RouteTables[].Associations[].RouteTableAssociationId`
@@ -67,7 +68,7 @@ done
 #	done
 #done
 #
-## delete route tables
+# delete route tables
 #for i in $vpcs
 #do
 #	rts=`aws ec2 $option describe-route-tables --filters Name=vpc-id,Values=$i | jq -r .RouteTables[].RouteTableId`
@@ -76,6 +77,8 @@ done
 #		echo delete route table $j for vpc $i
 #		aws ec2 $option delete-route-table --route-table-id $j $is_dryrun
 #	done
+#done
+#
 
 # delete vpcs
 for i in $vpcs

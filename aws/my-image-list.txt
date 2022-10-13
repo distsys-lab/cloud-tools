@@ -1,1 +1,1 @@
-us-east-1:ami-05cf62c5375f68022:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-10
+ap-northeast-1:ami-03c01cead21ae873c:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-10

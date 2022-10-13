@@ -10,22 +10,13 @@ ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 # Cluster config
 cluster_config=(
     #"cloud, region, number"
-    "aws,Virginia"
-    "azure,Tokyo"
-    "gcp,Sydney"
+    #",Virginia"
+    "aws,Tokyo"
+    #"aws,Sydney"
 )
 
 ### List of available regions ###
-#Tokyo
-#Mumbai
-#Singapore
-#Sydney
-#Frankfurt
-#Stockholm
-#Ireland
-#Paulo
-#Virginia
-#Oregon
+
 
 ### List of available Cloud Service Provider ###
 #aws
