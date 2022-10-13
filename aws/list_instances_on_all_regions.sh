@@ -17,11 +17,15 @@ do
 	instances_id=`aws --region $r ec2 describe-instances $filter | \
 		jq ".Reservations[].Instances[].InstanceId" | \
 		sed 's/"//g' | xargs | sed 's/ /:/g'`
+	instances_ip=`aws --region $r ec2 describe-instances $filter | \
+		jq ".Reservations[].Instances[].PublicIpAddress" | \
+		sed 's/"//g' | xargs | sed 's/ /:/g'`
 	index=1
 	for i in `echo $instances_id | sed 's/:/\n/g'`
 	do
 		state=`echo $instances_state | cut -d ":" -f $index`
+		ip=`echo $instances_ip | cut -d ":" -f $index`
 		((index++))
-		echo $r:$city:$i:$state
+		echo $r:$city:$i:$state:$ip
 	done
 done

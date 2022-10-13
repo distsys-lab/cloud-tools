@@ -5,4 +5,4 @@ source $sbin/common.sh
 
 load_setting $1
 
-az group delete --name $resource_group_name
+az group delete --name $resource_group_name --yes

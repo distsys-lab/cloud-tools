@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
-#global_configを読み込む
-#cluster_configに従って各クラウドツールに命令する
-#
 source ./global_config.txt
 
-
+echo delete aws instances
 cd aws
+(
 ./release_all_elastic_ips.sh
 ./terminate_all_instances.sh
 ./delete_my_vpcs_on_all_regions.sh
+) >> log.txt 
 cd ..
-#
-#cd azure
-#./sbin/delete_cluster.sh settings.sh
-#cd ..
-#
-#cd gcp
-#./delete_all_instances.sh
-#cd ..
+
+echo delete azure instances
+cd azure
+(
+./sbin/delete_cluster.sh settings.sh
+) >> log.txt 
+cd ..
+
+echo delete gcp instances
+cd gcp
+(
+./delete_all_instances.sh
+) >> log.txt 
+cd ..

@@ -1,0 +1,5 @@
+europe-west9-a:paris
+asia-northeast1-a:tokyo
+southamerica-east1-a:paulo
+australia-southeast1-a:sydney
+us-east4-a:virginia

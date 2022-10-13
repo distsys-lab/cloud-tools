@@ -1,0 +1,367 @@
+eu-west-3 i-0840a9703d361392f
+eipassoc-088c95ae1949c90b3
+eipalloc-04a4e3b20e261c28d
+ap-northeast-1 i-01c2a47bbfdda773e
+eipassoc-0cfc3aecafec7dd60
+eipalloc-0d20d6d22d3f80453
+sa-east-1 i-0948db3bd4b3f9e16
+eipassoc-08424f35d598ad296
+eipalloc-0f81a421e20a54daa
+ap-southeast-2 i-03a1bc50e5664b6fe
+eipassoc-0d66486c6b74bce3b
+eipalloc-0bc909396279c4fe7
+us-east-1 i-0ee98c98f7ad455f3
+eipassoc-05afb68cb56686b84
+eipalloc-08b7819fcb8083ae3
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-0840a9703d361392f",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-01c2a47bbfdda773e",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-0948db3bd4b3f9e16",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-03a1bc50e5664b6fe",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-0ee98c98f7ad455f3",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+eu-west-3 i-0840a9703d361392f
+
+
+ap-northeast-1 i-01c2a47bbfdda773e
+
+
+sa-east-1 i-0948db3bd4b3f9e16
+
+
+eu-west-3:Paris:i-0840a9703d361392f:shutting-down:null
+ap-southeast-2 i-03a1bc50e5664b6fe
+
+
+ap-northeast-1:Tokyo:i-01c2a47bbfdda773e:terminated:null
+us-east-1 i-0ee98c98f7ad455f3
+
+
+sa-east-1:Paulo:i-0948db3bd4b3f9e16:terminated:null
+ap-southeast-2:Sydney:i-03a1bc50e5664b6fe:terminated:null
+us-east-1:Virginia:i-0ee98c98f7ad455f3:shutting-down:null
+Waiting for the instance state to terminated
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0840a9703d361392f",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-01c2a47bbfdda773e",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0948db3bd4b3f9e16",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-03a1bc50e5664b6fe",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0ee98c98f7ad455f3",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+eu-west-3:Paris:i-0840a9703d361392f:terminated:null
+ap-northeast-1:Tokyo:i-01c2a47bbfdda773e:terminated:null
+sa-east-1:Paulo:i-0948db3bd4b3f9e16:terminated:null
+ap-southeast-2:Sydney:i-03a1bc50e5664b6fe:terminated:null
+us-east-1:Virginia:i-0ee98c98f7ad455f3:terminated:null
+./delete_my_vpc.sh eu-west-3 Paris
+eu-west-3:Paris:i-0840a9703d361392f:terminated:null
+vpc id: vpc-0f4cb6ef6e78b40a7
+detach internet gateway igw-0854e41af68960a30 for vpc vpc-0f4cb6ef6e78b40a7
+ap-northeast-1:Tokyo:i-01c2a47bbfdda773e:terminated:null
+delete internet gateway igw-0854e41af68960a30 for vpc vpc-0f4cb6ef6e78b40a7
+delete segurity group sg-054f93cb0d6d1b911 for vpc vpc-0f4cb6ef6e78b40a7
+sa-east-1:Paulo:i-0948db3bd4b3f9e16:terminated:null
+delete segurity group sg-06e03bb8b851655dd for vpc vpc-0f4cb6ef6e78b40a7
+ap-southeast-2:Sydney:i-03a1bc50e5664b6fe:terminated:null
+delete subnet subnet-039abc9a5a0e78912 for vpc vpc-0f4cb6ef6e78b40a7
+delete vpc vpc-0f4cb6ef6e78b40a7
+us-east-1:Virginia:i-0ee98c98f7ad455f3:terminated:null
+./delete_my_vpc.sh eu-west-3 Paris
+./delete_my_vpc.sh ap-northeast-1 Tokyo
+vpc id: vpc-0aaa8c100d5422dc8
+./delete_my_vpc.sh ap-northeast-1 Tokyo
+detach internet gateway igw-0b3a32974a14815c2 for vpc vpc-0aaa8c100d5422dc8
+vpc id: vpc-0aaa8c100d5422dc8
+delete internet gateway igw-0b3a32974a14815c2 for vpc vpc-0aaa8c100d5422dc8
+delete segurity group sg-03a8fdd0ab9783ada for vpc vpc-0aaa8c100d5422dc8
+delete segurity group sg-03a8fdd0ab9783ada for vpc vpc-0aaa8c100d5422dc8
+delete segurity group sg-0834ea3ac65e9a434 for vpc vpc-0aaa8c100d5422dc8
+delete segurity group sg-0834ea3ac65e9a434 for vpc vpc-0aaa8c100d5422dc8
+delete subnet subnet-05ed28d7cfd8a2e5f for vpc vpc-0aaa8c100d5422dc8
+delete subnet subnet-05ed28d7cfd8a2e5f for vpc vpc-0aaa8c100d5422dc8
+delete vpc vpc-0aaa8c100d5422dc8
+delete vpc vpc-0aaa8c100d5422dc8
+./delete_my_vpc.sh sa-east-1 Paulo
+./delete_my_vpc.sh sa-east-1 Paulo
+vpc id: vpc-0e7699efb3308156a
+vpc id: vpc-0e7699efb3308156a
+detach internet gateway igw-0402155a991dee0e5 for vpc vpc-0e7699efb3308156a
+detach internet gateway igw-0402155a991dee0e5 for vpc vpc-0e7699efb3308156a
+delete internet gateway igw-0402155a991dee0e5 for vpc vpc-0e7699efb3308156a
+delete internet gateway igw-0402155a991dee0e5 for vpc vpc-0e7699efb3308156a
+delete segurity group sg-02c055a845676de38 for vpc vpc-0e7699efb3308156a
+delete segurity group sg-02c055a845676de38 for vpc vpc-0e7699efb3308156a
+delete segurity group sg-0ba28ddffe58d8dba for vpc vpc-0e7699efb3308156a
+delete segurity group sg-0ba28ddffe58d8dba for vpc vpc-0e7699efb3308156a
+delete subnet subnet-08772bc639b2a1847 for vpc vpc-0e7699efb3308156a
+delete subnet subnet-08772bc639b2a1847 for vpc vpc-0e7699efb3308156a
+delete vpc vpc-0e7699efb3308156a
+delete vpc vpc-0e7699efb3308156a
+./delete_my_vpc.sh ap-southeast-2 Sydney
+./delete_my_vpc.sh ap-southeast-2 Sydney
+vpc id: vpc-075842281d8efb057
+vpc id: vpc-075842281d8efb057
+detach internet gateway igw-0eb5adb1046ff2b07 for vpc vpc-075842281d8efb057
+detach internet gateway igw-0eb5adb1046ff2b07 for vpc vpc-075842281d8efb057
+delete internet gateway igw-0eb5adb1046ff2b07 for vpc vpc-075842281d8efb057
+delete internet gateway igw-0eb5adb1046ff2b07 for vpc vpc-075842281d8efb057
+delete segurity group sg-02ca403a017974618 for vpc vpc-075842281d8efb057
+delete segurity group sg-02ca403a017974618 for vpc vpc-075842281d8efb057
+delete segurity group sg-0dbc2551462705e94 for vpc vpc-075842281d8efb057
+delete segurity group sg-0dbc2551462705e94 for vpc vpc-075842281d8efb057
+delete subnet subnet-001a0613311489dbe for vpc vpc-075842281d8efb057
+delete subnet subnet-001a0613311489dbe for vpc vpc-075842281d8efb057
+delete vpc vpc-075842281d8efb057
+delete vpc vpc-075842281d8efb057
+./delete_my_vpc.sh us-east-1 Virginia
+./delete_my_vpc.sh us-east-1 Virginia
+vpc id: vpc-039a19fc3d6f07785
+vpc id: vpc-039a19fc3d6f07785
+detach internet gateway igw-04928f0b82daff5a0 for vpc vpc-039a19fc3d6f07785
+detach internet gateway igw-04928f0b82daff5a0 for vpc vpc-039a19fc3d6f07785
+delete internet gateway igw-04928f0b82daff5a0 for vpc vpc-039a19fc3d6f07785
+delete internet gateway igw-04928f0b82daff5a0 for vpc vpc-039a19fc3d6f07785
+delete segurity group sg-07ff70d47750e913d for vpc vpc-039a19fc3d6f07785
+delete segurity group sg-07ff70d47750e913d for vpc vpc-039a19fc3d6f07785
+delete segurity group sg-01778f2e8061431ea for vpc vpc-039a19fc3d6f07785
+delete segurity group sg-01778f2e8061431ea for vpc vpc-039a19fc3d6f07785
+delete subnet subnet-058c1c42bb469a7d7 for vpc vpc-039a19fc3d6f07785
+delete subnet subnet-058c1c42bb469a7d7 for vpc vpc-039a19fc3d6f07785
+delete vpc vpc-039a19fc3d6f07785
+delete vpc vpc-039a19fc3d6f07785
+eu-west-3 i-0840a9703d361392f
+
+
+ap-northeast-1 i-01c2a47bbfdda773e
+
+
+sa-east-1 i-0948db3bd4b3f9e16
+
+
+ap-southeast-2 i-03a1bc50e5664b6fe
+
+
+us-east-1 i-0ee98c98f7ad455f3
+
+
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0840a9703d361392f",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-01c2a47bbfdda773e",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0948db3bd4b3f9e16",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-03a1bc50e5664b6fe",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 48,
+                "Name": "terminated"
+            },
+            "InstanceId": "i-0ee98c98f7ad455f3",
+            "PreviousState": {
+                "Code": 48,
+                "Name": "terminated"
+            }
+        }
+    ]
+}
+eu-west-3:Paris:i-0840a9703d361392f:terminated:null
+ap-northeast-1:Tokyo:i-01c2a47bbfdda773e:terminated:null
+sa-east-1:Paulo:i-0948db3bd4b3f9e16:terminated:null
+ap-southeast-2:Sydney:i-03a1bc50e5664b6fe:terminated:null
+us-east-1:Virginia:i-0ee98c98f7ad455f3:terminated:null
+./delete_my_vpc.sh eu-west-3 Paris
+./delete_my_vpc.sh ap-northeast-1 Tokyo
+./delete_my_vpc.sh sa-east-1 Paulo
+./delete_my_vpc.sh ap-southeast-2 Sydney
+./delete_my_vpc.sh us-east-1 Virginia

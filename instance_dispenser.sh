@@ -20,7 +20,6 @@ do
         echo not found cloud
         exit 1
     fi
-    region_name=`cat regions.csv | grep $region | cut -f $index`
-    cat $cloud/available-regions.txt | grep -i $region_name >> $cloud/my-region-list.txt
+    cat $cloud/available-regions.txt | grep -i $region >> $cloud/my-region-list.txt
 done
 
