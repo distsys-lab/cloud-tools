@@ -14,3 +14,7 @@ source ./global_config.txt
 #cd azure
 #./sbin/delete_cluster.sh
 #cd ..
+
+cd gcp
+./delete_all_instances.sh
+cd ..

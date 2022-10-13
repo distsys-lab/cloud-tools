@@ -16,8 +16,9 @@ source ./global_config.txt
 #./sbin/create_cluster.sh setting.sh
 #cd ..
 
-cd azure
-
+cd gcp
+./create_all_instances.sh
+./set_firewall_rules.sh
 cd ..
 
 
