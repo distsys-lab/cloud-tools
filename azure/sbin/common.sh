@@ -90,7 +90,7 @@ gen_nsg_name() {
   if [ -z $1 ] || [ -z $2 ]; then
     echo "Missing nsg name parameter(s)."; exit 1
   fi
-  echo "$2" #"vm$1-$2NSG"
+  echo "$2NSG" #"vm$1-$2NSG"
 }
 
 gen_rule_name() {

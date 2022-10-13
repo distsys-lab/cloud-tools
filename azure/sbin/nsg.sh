@@ -47,13 +47,6 @@ do
         --protocol ICMP \
         --priority 1501 \
         --destination-port-range '*' "
-    cmd="az network nsg rule create \
-        --resource-group ${resource_group_name} \
-        --nsg-name  ${nsg_name} \
-        --name ${rule_name} \
-        --protocol ICMP \
-        --priority 1501 \
-        --destination-port-range '*' "
     log "Executing: $cmd"
     run_cmd $cmd
   done

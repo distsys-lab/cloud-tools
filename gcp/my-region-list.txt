@@ -1,4 +1,1 @@
-us-east4-a:virginia
-asia-northeast1-a:tokyo
 australia-southeast1-a:sydney
-southamerica-east1-a:paulo

@@ -12,14 +12,14 @@ source ./global_config.txt
 #./create_and_run_instances_on_all_regions.sh
 #cd ..
 
-#cd azure 
-#./sbin/create_cluster.sh setting.sh
-#cd ..
-
-cd gcp
-./create_all_instances.sh
-./set_firewall_rules.sh
+cd azure 
+./sbin/create_cluster.sh settings.sh
 cd ..
+
+#cd gcp
+#./create_all_instances.sh
+#./set_firewall_rules.sh
+#cd ..
 
 
 
