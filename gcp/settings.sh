@@ -1,3 +1,4 @@
+source ../global_config.txt
 # Set image type. You can chose from available_image.txt
 image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-arm64-v20220927
 
@@ -5,7 +6,7 @@ image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global
 machine_type=e2-medium
 
 # Set your private key path
-ssh_file_path=~/.ssh/id_rsa
+ssh_file_path=$ssh_pubkey_path
 
 # "friendly name, region name"
 # "friendly name, region name"

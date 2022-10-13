@@ -1,3 +1,4 @@
+source ../global_config.txt
 ## Resource group settings
 resource_group_name="sample-cluster"
 ## Location options: az account list-locations --output table

@@ -1,0 +1,29 @@
+NAME      ZONE        MACHINE_TYPE  PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
+virginia  us-east4-a  e2-medium                  10.150.0.26  35.221.27.216  RUNNING
+loginProfile:
+  name: '116265156157522799276'
+  posixAccounts:
+  - accountId: koya-shiozaki
+    gid: '1764195385'
+    homeDirectory: /home/kouyan120706_gmail_com
+    name: users/kouyan120706@gmail.com/projects/koya-shiozaki
+    operatingSystemType: LINUX
+    primary: true
+    uid: '1764195385'
+    username: kouyan120706_gmail_com
+  sshPublicKeys:
+    1fadae9f170e335eab2afa2256db0e01defae30ef2dcf32811b1806b7594934d:
+      fingerprint: 1fadae9f170e335eab2afa2256db0e01defae30ef2dcf32811b1806b7594934d
+      key: |
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJ3xc9pfU6hlXQNNrIhqTVEBWy1j4axtX2R3R6tSjT8wJnhlkmYITy/EpAnDkTb2bSX9bCqRUqG55HuZdNBS6rMxQQ82TUiVpNg4X+XLthBHrVCJq6JfbrCq5GpPcaUxAy9CBuzK5ODwkf25XniMvYRwwrGf7tRu1vp7nolkVii3vYQSp/3GbsVxrStMi75DM7rxih3XgFfYVyIqpcTd9qqkb6KpFf+eI2FQ/lkWJfeXROOPLAfBBTpv/PlWTLLQT+a7BwzNE6v6RZkG2nIrHFFx75Ap62hTQr8oxh3ZMjzP6oCpqSRPRujrTreRcBzAJSMRwNDfL/V8kWiTolDhe0s21gGaCSt36PFNw0uku6t8U9JVuYuhRIFagbPobOhLBEr6BOEsw3Dl1phIZMNu3yqz9nKip9kevNJWiH3TOaovdDBySrDgHGuCikF+lpxwXvd+5tymRqlGaQgfkwqAW5ROAaW0wL32OPBlNkZ1W15kQlorxqWGWPDBtTEFWtvwk= koya@koya-ubuntu-lab
+      name: users/kouyan120706@gmail.com/sshPublicKeys/1fadae9f170e335eab2afa2256db0e01defae30ef2dcf32811b1806b7594934d
+    309242cb06424173f3786fe8a38e3307e87959fdacf80b837d62ddae82788d25:
+      fingerprint: 309242cb06424173f3786fe8a38e3307e87959fdacf80b837d62ddae82788d25
+      key: |
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvQMuxlAAF/6hwiwFnIKd01ZEgFXhcpul5sEqmeiCm4kEt9acsgAgA8oF0sRkom4kRdpCnjaZ1QeRRoM3PhS4B2Ag495oGW18RrwjjphDo08K3OYMAasFVDzp+XZeNToz8OJ2fvPhbzWfqDMSZRC1f6VYqIf4WmZubB75K6cwdkuVyqexth33NjqhvtbSFsaEmJblp5S4PwJ6gyYTikvGpoLUlSqimphFYQKITBTQ0M24gJNf9X+XKNeKojkk3EicJoeAHet1DnAAEioM5pjUvSbo+y95z1pt1MyKhT97ybNemH0/AHtS7ae7jcieqZT5a1l4L2YAsy5lPMeo3UpuJWUNUWAdGyFZgYn8/sqPRjQbbbn2koJop9FxAi7fUiVgYyGvPCxReHbA2qRBwjqtEVJIhRcfcDOV4uqYYoK4qiblrYe3F1ltMhXThCEvkca1YgKd1LMfQhZIp6SUxPb7nE2v6XsY610fLoK6PBVe9kHaV6TYd9q9vgGgJi8YUhlc= koya@koya-laptop
+      name: users/kouyan120706@gmail.com/sshPublicKeys/309242cb06424173f3786fe8a38e3307e87959fdacf80b837d62ddae82788d25
+    d2c74b3a1c9acaa994c24c1a98b7cccce39baeca0802bce5831fb5bf1a5fe910:
+      fingerprint: d2c74b3a1c9acaa994c24c1a98b7cccce39baeca0802bce5831fb5bf1a5fe910
+      key: |
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEWsqLqGZ1Vgb3AYDCHNg8nBQCvhJXLAlBHh6A4tB/ndsoX+S0f5gyg5xpbHDDgvv/B+dEOlMxATyY2X312OFJUa5iO9tp2RrOZ9t78bta515DEjrH1l0H2RKFlLFpYEF0QbRwN03r3vJ+Q9o4l0NJ4/e3GsrmI4HM4J+CgnVWkZuacoW0pEZ1dWai9DDeYWbeAUQ+8vWgym2ZCuIzo/cG/3OXJ/oPZgrE6F04TBCj2Wb1HHIn21+ITgxylVWIy2ne66XkX8rFm8hNXFsBnfFRDRmFTAcueEZWpEV6YjSddD4JFUc28sIdlI+sUpZAbDaMMbX5K+13maNyzrjZdCnpVZrFLVOfYC81Ypseunv+QaVY7FyhV+K0LFFFOLK6krabKrR5uFBiS4ixlDT4JL7dSYNIWmDX/ZaqD8p8QR9G4MI9bFJF5jkxEeqHzfYLjAeu57LIMSy/JHtqZFYhShNSCE1cLIhJVz3lIkXTvRw2F1Vyh0wqQZu3BCfSXPfTzmE= ubuntu@ip-172-31-30-70
+      name: users/kouyan120706@gmail.com/sshPublicKeys/d2c74b3a1c9acaa994c24c1a98b7cccce39baeca0802bce5831fb5bf1a5fe910

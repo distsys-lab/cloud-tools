@@ -365,3 +365,124 @@ us-east-1:Virginia:i-0ee98c98f7ad455f3:terminated:null
 ./delete_my_vpc.sh sa-east-1 Paulo
 ./delete_my_vpc.sh ap-southeast-2 Sydney
 ./delete_my_vpc.sh us-east-1 Virginia
+./create_my_vpc.sh eu-west-3 Paris
+create a vpc
+tag the vpc
+create a subnet for the vpc
+tag the subnet
+create a internet gateway
+assign the internet gateway to the vpc
+tag the internet gateway
+get the route table id of the vpc
+add the gateway to the vpc's route table
+{
+    "Return": true
+}
+create a security group for the vpc
+add ingress rules to the security group
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-00bfe89ea7b2c3343",
+            "GroupId": "sg-0fce0f0207c7e7091",
+            "GroupOwnerId": "417043241197",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIpv4": "0.0.0.0/0"
+        }
+    ]
+}
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-07d8af4e9499783ca",
+            "GroupId": "sg-0fce0f0207c7e7091",
+            "GroupOwnerId": "417043241197",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 10000,
+            "ToPort": 65535,
+            "CidrIpv4": "0.0.0.0/0"
+        }
+    ]
+}
+{
+    "Return": true,
+    "SecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-07fac31ce61713cb6",
+            "GroupId": "sg-0fce0f0207c7e7091",
+            "GroupOwnerId": "417043241197",
+            "IsEgress": false,
+            "IpProtocol": "icmp",
+            "FromPort": -1,
+            "ToPort": -1,
+            "CidrIpv4": "0.0.0.0/0"
+        }
+    ]
+}
+register public key to the region eu-west-3
+vpc-id: vpc-0c362c53e33285afd
+subnet-id: subnet-07c3fa2b1b29dc36f
+igid-id: igw-096f9e47077b4759d
+rtbid-id: rtb-05d5f4ec70e4d0755
+sgid-id: sg-0fce0f0207c7e7091
+==== Run a instance on eu-west-3 ====
+get subnet id
+get securiy group id
+run a instance
+allocate elastic IP
+assign elastic IP
+{
+    "AssociationId": "eipassoc-03b01fafcdd35526d"
+}
+assign instance's name: my-bftreplica
+subnet-id: subnet-07c3fa2b1b29dc36f
+security-group-id: sg-0fce0f0207c7e7091
+instance-id: i-022d743388a7b8d3f
+allocation-id: eipalloc-089e5cab10bc1911f
+eu-west-3 i-022d743388a7b8d3f
+eipassoc-03b01fafcdd35526d
+eipalloc-089e5cab10bc1911f
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-022d743388a7b8d3f",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:shutting-down:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:terminated:null
+Waiting for the instance state to terminated
+eu-west-3:Paris:i-022d743388a7b8d3f:terminated:null
+./delete_my_vpc.sh eu-west-3 Paris
+vpc id: vpc-0c362c53e33285afd
+detach internet gateway igw-096f9e47077b4759d for vpc vpc-0c362c53e33285afd
+delete internet gateway igw-096f9e47077b4759d for vpc vpc-0c362c53e33285afd
+delete segurity group sg-0f5e78185c282c7d9 for vpc vpc-0c362c53e33285afd
+delete segurity group sg-0fce0f0207c7e7091 for vpc vpc-0c362c53e33285afd
+delete subnet subnet-07c3fa2b1b29dc36f for vpc vpc-0c362c53e33285afd
+delete vpc vpc-0c362c53e33285afd
