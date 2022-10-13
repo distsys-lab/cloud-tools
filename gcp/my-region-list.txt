@@ -1,1 +1,1 @@
-us-east4-a:virginia
+australia-southeast1-a:sydney
