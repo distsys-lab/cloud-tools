@@ -1,0 +1,5 @@
+francecentral:Paris
+eastus:Virginia
+australiaeast:Sydney
+brazilsouth:Paulo
+japaneast:Tokyo

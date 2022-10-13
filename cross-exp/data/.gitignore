@@ -1,3 +1,0 @@
-aws-inter-region-rtt/*
-aws-inter-region-throughput/*
-!ave.py

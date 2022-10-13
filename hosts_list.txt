@@ -1,0 +1,15 @@
+ubuntu:aws-Paris:13.37.91.126
+ubuntu:aws-Tokyo:52.196.207.164
+ubuntu:aws-Paulo:18.230.79.151
+ubuntu:aws-Sydney:54.252.2.85
+ubuntu:aws-Virginia:3.217.179.22
+ubuntu:azure-Virginia:20.172.142.235
+ubuntu:azure-Tokyo:20.222.108.130
+ubuntu:azure-Paulo:20.197.186.84
+ubuntu:azure-Sydney:20.5.201.109
+ubuntu:azure-Paris:51.103.98.144
+koya:gcp-tokyo:35.200.65.249
+koya:gcp-virginia:35.221.44.151
+koya:gcp-sydney:34.116.69.47
+koya:gcp-paulo:34.95.255.73
+koya:gcp-paris:34.155.104.253

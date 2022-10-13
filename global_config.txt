@@ -1,0 +1,41 @@
+# Global config
+
+# Resource Management Name
+### xxxxx-xxxxx (We can use "-" only one time in Azure rule)
+resource_name_prefix="koya-bft"
+
+# SSH config
+ssh_key_path="$HOME/.ssh/id_rsa"
+ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
+
+# Cluster config
+cluster_config=(
+    #"cloud, region, number"
+    "aws,Paris"
+    #"aws,Tokyo"
+    #"aws,Paulo"
+    #"aws,Sydney"
+    #"aws,Virginia"
+    #"azure,Paris"
+    "azure,Tokyo"
+    #"azure,Paulo"
+    #"azure,Sydney"
+    #"azure,Virginia"
+    #"gcp,Paris"
+    #"gcp,Tokyo"
+    #"gcp,Paulo"
+    "gcp,Sydney"
+    #"gcp,Virginia"
+)
+
+### List of available regions ###
+#Paris
+#Tokyo
+#Paulo
+#Sydney
+#Virginia
+
+### List of available Cloud Service Provider ###
+#aws
+#azure
+#gcp
