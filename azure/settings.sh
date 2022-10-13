@@ -1,6 +1,6 @@
 source ../global_config.txt
 ## Resource group settings
-resource_group_name="sample-cluster"
+resource_group_name=$resource_name_prefix
 ## Location options: az account list-locations --output table
 ## uses the value under name / Name
 resource_group_location="eastus2"
@@ -13,7 +13,7 @@ vnet_subnet_name="Subnet1"
 ## Virtual machine settings
 ## VM public key file for login, which must corresponds to the private key that
 ## is configured on Azure for VM logins.
-vm_public_key="$HOME/.ssh/id_rsa.pub"
+vm_public_key=$ssh_pubkey_path
 ## VM username
 vm_username="$USER"
 ## VM image options: az vm image list --output table
