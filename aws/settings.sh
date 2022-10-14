@@ -23,3 +23,5 @@ os_image_type="Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on "
 region_list=my-region-list.txt
 # a list of OS image IDs for your instances
 image_list=my-image-list.txt
+# VM user name (This parameter cannot be changed)
+vm_username=ubuntu
