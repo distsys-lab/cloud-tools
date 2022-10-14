@@ -17,7 +17,7 @@ gcp_vm_username=kouyan120706
 cluster_config=(
     #"cloud, region"
     #"aws,Paris"
-    "aws,Tokyo"
+    #"aws,Tokyo"
     "aws,Paulo"
     #"aws,Sydney"
     #"aws,Virginia"

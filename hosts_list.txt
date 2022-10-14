@@ -1,3 +1,4 @@
 ubuntu:aws-Paulo:177.71.234.225
+ubuntu:aws-Tokyo:35.73.44.161
 ubuntu:azure-Sydney:20.213.88.64
-koya:gcp-Tokyo:35.200.65.249
+koya:gcp-tokyo:35.200.65.249
