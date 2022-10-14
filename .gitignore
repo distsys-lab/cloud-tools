@@ -1,1 +1,3 @@
 */*.log
+*/*.txt
+hosts_list.txt

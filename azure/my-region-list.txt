@@ -1,1 +1,1 @@
-japaneast:Tokyo
+australiaeast:Sydney

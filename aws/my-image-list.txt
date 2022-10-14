@@ -1,0 +1,1 @@
+sa-east-1:ami-0efc6acdb081d5a82:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-10

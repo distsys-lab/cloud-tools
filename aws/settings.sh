@@ -4,7 +4,6 @@ name_prefix=my-bft
 if [ -n $resource_name_prefix ]; then
     name_prefix=$resource_name_prefix
 fi
-echo $name_prefix
 # the name of a key pair that will be created
 keypair_name=my-keypair
 if [ -n $resource_name_prefix ]; then
@@ -13,7 +12,7 @@ fi
 # the path to your public key, which will be used as your aws key pair
 pubkey_path=$HOME/.ssh/id_rsa.pub
 if [ -n $ssh_pubkey_path ]; then
-    keypair_name=$ssh_pubkey_path
+    keypair_path=$ssh_pubkey_path
 fi
 # instance type
 instance_type=t3.micro

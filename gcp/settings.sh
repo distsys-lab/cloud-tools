@@ -9,7 +9,7 @@ machine_type=e2-medium
 ssh_file_path=$ssh_pubkey_path
 
 # Vm user name
-vm_username=$HOME
+vm_username=$gcp_vm_username
 # "friendly name, region name"
 # "friendly name, region name"
 # "friendly name, region name"
