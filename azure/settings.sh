@@ -15,7 +15,7 @@ vnet_subnet_name="Subnet1"
 ## is configured on Azure for VM logins.
 vm_public_key=$ssh_pubkey_path
 ## VM username
-vm_username="$USER"
+vm_username=$USER
 ## VM image options: az vm image list --output table
 ## Uses the value under Urn or UrnAlias
 vm_image="UbuntuLTS"

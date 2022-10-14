@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./config.sh
+source ./settings.sh
 regions=$region_list
 images=$image_list
 for r in `cat $regions | cut -d : -f 1`

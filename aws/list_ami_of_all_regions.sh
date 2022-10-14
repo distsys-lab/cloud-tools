@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #set -x
-source ./config.sh
+source ./settings.sh
 regions=$region_list
 
 build_date=`date +%Y-`

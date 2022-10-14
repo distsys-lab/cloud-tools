@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./config.sh
+source ./settings.sh
 regions=$region_list
 group_name=$name_prefix
 filter="--filters Name=\"tag:Group\",Values=\"$group_name\""

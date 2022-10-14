@@ -11,7 +11,7 @@ ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 # Cluster config
 cluster_config=(
     #"cloud, region, number"
-    "aws,Paris"
+    #"aws,Paris"
     #"aws,Tokyo"
     #"aws,Paulo"
     #"aws,Sydney"
@@ -24,7 +24,7 @@ cluster_config=(
     #"gcp,Paris"
     #"gcp,Tokyo"
     #"gcp,Paulo"
-    "gcp,Sydney"
+    #"gcp,Sydney"
     #"gcp,Virginia"
 )
 

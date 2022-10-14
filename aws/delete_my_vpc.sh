@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./config.sh
+source ./settings.sh
 if [ $# -lt 2 ]; then
 >---echo 'usage: region-name friendly-name'
 >---exit 1
