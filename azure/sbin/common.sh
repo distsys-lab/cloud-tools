@@ -68,10 +68,10 @@ log() {
 }
 
 gen_vm_name() {
-  if [ -z $1 ] || [ -z $2 ]; then
+  if [ -z $1 ]; then
     echo "Missing vm name parameter(s)."; exit 1
   fi
-  echo "$2" #"vm$1-$2"
+  echo "$1" #"vm$1-$2"
 }
 
 gen_dns_name() {
@@ -96,10 +96,10 @@ gen_vnet_peer_name() {
 }
 
 gen_nsg_name() {
-  if [ -z $1 ] || [ -z $2 ]; then
+  if [ -z $1 ]; then
     echo "Missing nsg name parameter(s)."; exit 1
   fi
-  echo "$2NSG" #"vm$1-$2NSG"
+  echo "$1NSG" #"vm$1-$2NSG"
 }
 
 gen_rule_name() {
@@ -107,4 +107,8 @@ gen_rule_name() {
     echo "Missing rule name parameter(s)."; exit 1
   fi
   echo "rule$1-$2"
+}
+
+gen_public_ip_name() {
+  echo "$1PublicIP"
 }

@@ -2,7 +2,6 @@
 sbin="`dirname $0`"
 sbin="`cd $sbin; pwd`"
 source $sbin/common.sh
-echo $1 $2
 load_setting $1 $2
 
 # Creates a resource group

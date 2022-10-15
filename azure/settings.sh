@@ -54,8 +54,7 @@ do
     location=`echo $line | cut -d ":" -f 1`
     tag=`echo $line | cut -d ":" -f 2`
     vnet_ip=`echo $line | cut -d ":" -f 3`
-    num=`echo $line | cut -d ":" -f 4`
-    cluster_config+=("$location $tag $vnet_ip $num")
+    cluster_config+=("$location $tag $vnet_ip")
 done < my-region-list.txt
 
 #echo "${cluster_config[1]}"

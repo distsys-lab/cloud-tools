@@ -20,18 +20,15 @@ do
   dc_vnet_name=`gen_vnet_name ${c[1]}`
   vm_num=${c[3]}
 
-  for i in `seq $vm_num`
-  do
-    vm_name=`gen_vm_name $i ${c[1]}`
-    log "Deallocating VM $vm_name at location ${dc_location} in resource group ${resource_group_name}"
+  vm_name=`gen_vm_name ${c[1]}`
+  log "Deallocating VM $vm_name at location ${dc_location} in resource group ${resource_group_name}"
 
-    cmd="az vm deallocate \
-      --name ${vm_name} \
-      --resource-group ${resource_group_name} \
-      --no-wait \
-      "
+  cmd="az vm deallocate \
+    --name ${vm_name} \
+    --resource-group ${resource_group_name} \
+    --no-wait \
+    "
 
-    log "Executing: $cmd"
-    run_cmd $cmd
-  done
+  log "Executing: $cmd"
+  run_cmd $cmd
 done
