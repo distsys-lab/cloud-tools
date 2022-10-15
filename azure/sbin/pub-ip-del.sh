@@ -15,4 +15,4 @@ do
   run_cmd $cmd
 done
 
-log "Done deleting public ip in resource group ${resource_group_name}"
+log "Done deleting Public IP in resource group ${resource_group_name}"

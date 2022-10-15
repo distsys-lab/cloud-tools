@@ -20,8 +20,10 @@ if [ -n $aws_vm_username ]; then
     vm_username=$aws_vm_username
 fi
 # instance type
+### Choose this carefully. Some machine cannot be used in certain areas.
 instance_type=t3.micro
 # OS Image type
+### Choose this carefully. Some images cannot be used in certain areas.
 os_image_type="Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on "
 # a list of regions where this toolset manages
 region_list=my-region-list.txt
