@@ -23,13 +23,10 @@ search_real_layout () {
 }
 
 ./check_hosts_ip.sh
-ideal_cluster_size=${#cluster_config[@]}
-real_cluster_size=`cat hosts_list.txt | wc -l`
 for i in ${cluster_config[@]};
 do
     match_cnt=`search_real_layout $i`
     if [ $match_cnt -eq 1 ]; then
-        #echo $i is ok!
         :
     elif [ $match_cnt -gt 1 ]; then # >
         echo -n "you need to delete $i"
@@ -43,7 +40,6 @@ for i in `cat hosts_list.txt | cut -d ":" -f 2`
 do
     match_cnt=`search_ideal_layout $i`
     if [ $match_cnt -eq 1 ]; then
-        #echo $i is ok!
         :
     elif [ $match_cnt -gt 1 ]; then # >
         echo you need to deploy $i

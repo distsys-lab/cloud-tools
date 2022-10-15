@@ -1,23 +1,25 @@
 # Global config
+### Set it up for you
 
 # Resource Management Name
-### xxxxx-xxxxx (We can use "-" only one time in Azure rule)
-resource_name_prefix="koya-bft"
+### We can use "-" only one time in Azure rule
+resource_name_prefix="hoge-hoge"
 
 # SSH config
 ssh_key_path="$HOME/.ssh/id_rsa"
 ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 
 # Instance user name
-aws_vm_username=ubuntu
-azure_vm_username=ubuntu
-gcp_vm_username=kouyan120706
+aws_vm_username=ubuntu # Do not change
+azure_vm_username=ubuntu # Suit yourself
+gcp_vm_username=hoge # hoge@gmail.com (Follow your gmail address)
 
 # Cluster config
+### Default available cloud and region combinations.
+### Delete the "#" where you want the instance to stand.
 cluster_config=(
-    #"cloud,region"
     #"aws,Paris"
-    "aws,Tokyo"
+    #"aws,Tokyo"
     #"aws,Paulo"
     #"aws,Sydney"
     #"aws,Virginia"
@@ -33,16 +35,16 @@ cluster_config=(
     #"gcp,Virginia"
 )
 
-### List of available regions ###
+# List of available regions
 region_list=(
-    Paris
-    Tokyo
-    Paulo
-    Sydney
-    Virginia
+    "Paris"
+    "Tokyo"
+    "Paulo"
+    "Sydney"
+    "Virginia"
 )
 
-### List of available Cloud Service Provider ###
+# List of available Cloud Service Provider
 cloud_list=(
     "aws"
     "azure"

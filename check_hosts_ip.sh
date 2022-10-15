@@ -27,4 +27,4 @@ cat gcp/vm.ip | while read line
 do
 	echo "$USER:gcp-$line"
 done
-) > hosts_list.txt
+) | tee hosts_list.txt

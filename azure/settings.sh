@@ -42,12 +42,12 @@ vm_dns_suffix="cloudapp.azure.com"
 ## Azure CLI.
 vm_no_wait="false"
 
-# azure-location customized-tag vnet_ip number-of-vms
-#cluster_config=(
-#"eastus2      eastus2       10.1.0.0    2"
-#"westus       westus        10.2.0.0    1"
-#"westus2      westus2       10.3.0.0    1"
-#)
+# Cluster Config
+### It can be easily created with cp available-regions.txt my-region-list.txt
+### Describe the cluster settings in "my-region-list.txt" in the following format.
+### region_name:tag_name:vNetIP
+### region_name:tag_name:vNetIP
+### region_name:tag_name:vNetIP
 cluster_config=()
 while read line
 do
@@ -56,53 +56,3 @@ do
     vnet_ip=`echo $line | cut -d ":" -f 3`
     cluster_config+=("$location $tag $vnet_ip")
 done < my-region-list.txt
-
-#echo "${cluster_config[1]}"
-
-### A list of Azure locations from location.sh ####
-### Asia-Pacific
-#eastasia
-#southeastasia
-#japanwest
-#japaneast
-#koreacentral
-#koreasouth
-#australiaeast
-#australiasoutheast
-#australiacentral
-#australiacentral2
-#southindia
-#centralindia
-#westindia
-### North America
-#eastus
-#eastus2
-#westus
-#westus2
-#centralus
-#westcentralus
-#northcentralus
-#southcentralus
-#canadacentral
-#canadaeast
-### Europe
-#northeurope
-#westeurope
-#uksouth
-#ukwest
-#francecentral
-#francesouth
-#switzerlandnorth
-#switzerlandwest
-#germanynorth
-#germanywestcentral
-#norwaywest
-#norwayeast
-### Middle East
-#uaecentral
-#uaenorth
-### North America
-#brazilsouth
-### Africa
-#southafricanorth
-#southafricawest
