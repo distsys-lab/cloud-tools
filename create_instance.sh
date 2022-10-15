@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 source ./global_config.txt
 
-# $1=cloud_name , $2=region_name 
-echo $1-$2
+if [ -z $1 ] || [ -z $2 ]; then
+    echo "Error: Argument value is missing.";
+    echo "The arguments are 1:cloud name, 2:region name";
+    exit 1
+fi
+echo Creating $1-$2 instance.
 
 if [ $1 = "aws" ]; then
     cd $1

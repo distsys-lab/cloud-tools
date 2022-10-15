@@ -13,6 +13,7 @@ do
 	./terminate_instance.sh $region $instance
 done
 
+# Wait for the instance to terminate
 while true
 do
 	flag=1

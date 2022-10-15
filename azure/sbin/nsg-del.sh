@@ -16,4 +16,4 @@ do
   run_cmd $cmd
 done
 
-log "Done deleting Nsg in resource group ${resource_group_name}"
+log "Done deleting NSG in resource group ${resource_group_name}"

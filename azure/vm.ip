@@ -1,2 +1,2 @@
-2022年 10月 15日 土曜日 15:53:04 JST: Executing: az vm list-ip-addresses   --resource-group koya-bft   --output table
+2022年 10月 15日 土曜日 16:55:34 JST: Executing: az vm list-ip-addresses   --resource-group koya-bft   --output table
 

@@ -16,4 +16,4 @@ do
   run_cmd $cmd
 done
 
-log "Done deleting Vm in resource group ${resource_group_name}"
+log "Done deleting VM in resource group ${resource_group_name}"
