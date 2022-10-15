@@ -1,1 +1,4 @@
 */*.log
+*/*.txt
+hosts_list.txt
+test.sh

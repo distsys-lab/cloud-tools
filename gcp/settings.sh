@@ -8,6 +8,8 @@ machine_type=e2-medium
 # Set your private key path
 ssh_file_path=$ssh_pubkey_path
 
+# Vm user name
+vm_username=$gcp_vm_username
 # "friendly name, region name"
 # "friendly name, region name"
 # "friendly name, region name"

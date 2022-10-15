@@ -8,23 +8,28 @@ resource_name_prefix="koya-bft"
 ssh_key_path="$HOME/.ssh/id_rsa"
 ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 
+# Instance user name
+aws_vm_username=ubuntu
+azure_vm_username=ubuntu
+gcp_vm_username=kouyan120706
+
 # Cluster config
 cluster_config=(
-    #"cloud, region, number"
-    "aws,Paris"
+    #"cloud, region"
+    #"aws,Paris"
     #"aws,Tokyo"
     #"aws,Paulo"
     #"aws,Sydney"
     #"aws,Virginia"
     #"azure,Paris"
-    "azure,Tokyo"
+    #"azure,Tokyo"
     #"azure,Paulo"
     #"azure,Sydney"
     #"azure,Virginia"
     #"gcp,Paris"
-    #"gcp,Tokyo"
-    #"gcp,Paulo"
-    "gcp,Sydney"
+    #"gcp,Tokyo" 
+    #"gcp,Paulo" 
+    #"gcp,Sydney"
     #"gcp,Virginia"
 )
 
@@ -39,3 +44,6 @@ cluster_config=(
 #aws
 #azure
 #gcp
+aws_vm_username=ubuntu
+azure_vm_username=ubuntu
+gcp_vm_username=$USER

@@ -18,6 +18,15 @@ load_setting() {
   fi
 
   source ${__setting__}
+  if [ -n "$2" ]; then
+    cluster_config=()
+    line=`cat available-regions.txt | grep -i $2`
+    location=`echo $line | cut -d ":" -f 1`
+    tag=`echo $line | cut -d ":" -f 2`
+    vnet_ip=`echo $line | cut -d ":" -f 3`
+    num=`echo $line | cut -d ":" -f 4`
+    cluster_config+=("$location $tag $vnet_ip $num")
+  fi
 
   if [ -z $vm_public_key ]; then
     echo "Missing vm_public_key in ${__setting__}"; exit 1
@@ -59,10 +68,10 @@ log() {
 }
 
 gen_vm_name() {
-  if [ -z $1 ] || [ -z $2 ]; then
+  if [ -z $1 ]; then
     echo "Missing vm name parameter(s)."; exit 1
   fi
-  echo "$2" #"vm$1-$2"
+  echo "$1" #"vm$1-$2"
 }
 
 gen_dns_name() {
@@ -87,10 +96,10 @@ gen_vnet_peer_name() {
 }
 
 gen_nsg_name() {
-  if [ -z $1 ] || [ -z $2 ]; then
+  if [ -z $1 ]; then
     echo "Missing nsg name parameter(s)."; exit 1
   fi
-  echo "$2NSG" #"vm$1-$2NSG"
+  echo "$1NSG" #"vm$1-$2NSG"
 }
 
 gen_rule_name() {
@@ -98,4 +107,8 @@ gen_rule_name() {
     echo "Missing rule name parameter(s)."; exit 1
   fi
   echo "rule$1-$2"
+}
+
+gen_public_ip_name() {
+  echo "$1PublicIP"
 }

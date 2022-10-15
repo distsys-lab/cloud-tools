@@ -8,12 +8,12 @@ load_setting $1 $2
 for c in "${cluster_config[@]}"
 do
   c=($c)
-  dc_vnet_name=`gen_vnet_name ${c[1]}`
-  cmd="az network vnet delete -g ${resource_group_name} -n ${dc_vnet_name}"
+  nsg_name=`gen_nsg_name ${c[1]}`
+  cmd="az network nsg delete -g ${resource_group_name} -n ${nsg_name}"
 
   log "Deleting VNet $dc_vnet_name in resource group ${resource_group_name}"
-  log "Executing: $cmd"
+  log "Executingu: $cmd"
   run_cmd $cmd
 done
 
-log "Done deleting VNets in resource group ${resource_group_name}"
+log "Done deleting Nsg in resource group ${resource_group_name}"

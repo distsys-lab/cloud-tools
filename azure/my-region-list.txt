@@ -1,1 +1,1 @@
-japaneast:Tokyo
+francecentral:Paris:10.1.0.0:1

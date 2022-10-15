@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-source ./config.sh
-regions=$region_list
+source ./settings.sh
+regions=available-regions.txt #$region_list
 group_name=$name_prefix
 filter="--filters Name=\"tag:Group\",Values=\"$group_name\""
 if [ $# -ge 1 -a x$1 = xany ]; then

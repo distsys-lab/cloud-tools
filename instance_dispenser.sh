@@ -10,11 +10,11 @@ for i in ${cluster_config[@]};
 do
     cloud=`echo $i | cut -d ',' -f 1`
     region=`echo $i | cut -d ',' -f 2`
-    if [ $cloud="aws" ]; then
+    if [ $cloud = "aws" ]; then
         index=1
-    elif [ $cloud="azure" ]; then
+    elif [ $cloud = "azure" ]; then
         index=2
-    elif [ $cloud="gcp" ]; then
+    elif [ $cloud = "gcp" ]; then
         index=3
     else
         echo not found cloud
