@@ -3,7 +3,7 @@ sbin="`dirname $0`"
 sbin="`cd $sbin; pwd`"
 source $sbin/common.sh
 
-load_setting $1
+load_setting $1 $2
 
 for c in "${cluster_config[@]}"
 do
