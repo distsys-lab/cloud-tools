@@ -49,13 +49,13 @@ vm_no_wait="false"
 #"westus2      westus2       10.3.0.0    1"
 #)
 cluster_config=()
-cnt=1
 while read line
 do
     location=`echo $line | cut -d ":" -f 1`
     tag=`echo $line | cut -d ":" -f 2`
-    cluster_config+=("$location $tag 10.$cnt.0.0 1")
-    ((cnt++))
+    vnet_ip=`echo $line | cut -d ":" -f 3`
+    num=`echo $line | cut -d ":" -f 4`
+    cluster_config+=("$location $tag $vnet_ip $num")
 done < my-region-list.txt
 
 #echo "${cluster_config[1]}"

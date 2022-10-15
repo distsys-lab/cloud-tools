@@ -1,5 +1,5 @@
-francecentral:Paris
-eastus:Virginia
-australiaeast:Sydney
-brazilsouth:Paulo
-japaneast:Tokyo
+francecentral:Paris:10.1.0.0:1
+eastus:Virginia:10.2.0.0:1
+australiaeast:Sydney:10.3.0.0:1
+brazilsouth:Paulo:10.4.0.0:1
+japaneast:Tokyo:10.5.0.0:1
