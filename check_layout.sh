@@ -23,8 +23,6 @@ search_real_layout () {
 }
 
 ./check_hosts_ip.sh
-ideal_cluster_size=${#cluster_config[@]}
-real_cluster_size=`cat hosts_list.txt | wc -l`
 for i in ${cluster_config[@]};
 do
     match_cnt=`search_real_layout $i`

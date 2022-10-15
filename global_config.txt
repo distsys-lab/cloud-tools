@@ -15,9 +15,9 @@ gcp_vm_username=kouyan120706
 
 # Cluster config
 cluster_config=(
-    #"cloud, region"
+    #"cloud,region"
     #"aws,Paris"
-    #"aws,Tokyo"
+    "aws,Tokyo"
     #"aws,Paulo"
     #"aws,Sydney"
     #"aws,Virginia"
@@ -41,9 +41,11 @@ cluster_config=(
 #Virginia
 
 ### List of available Cloud Service Provider ###
-#aws
-#azure
-#gcp
+cloud_list=(
+    "aws"
+    "azure"
+    "gcp"
+)
 aws_vm_username=ubuntu
 azure_vm_username=ubuntu
 gcp_vm_username=$USER
