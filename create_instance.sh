@@ -16,7 +16,6 @@ if [ $1 = "aws" ]; then
 elif [ $1 = "azure" ]; then
     cd $1
     ./sbin/create_cluster.sh settings.sh $2
-    cat available-regions.txt | grep -i $2 >> my-region-list.txt
     cd ..
 elif [ $1 = "gcp" ]; then
     cd $1
@@ -24,6 +23,5 @@ elif [ $1 = "gcp" ]; then
     tag=`cat available-regions.txt | grep -i $2 | cut -d ":" -f 2`
     zone=`cat available-regions.txt | grep -i $2 | cut -d ":" -f 1`
     ./create_instance.sh $tag $zone $machine_type
-    cat available-regions.txt | grep -i $2 >> my-region-list.txt
     cd ..
 fi

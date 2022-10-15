@@ -7,12 +7,10 @@ echo $1-$2
 if [ $1 = "aws" ]; then
     cd $1
     source ./settings.sh
-    ##ip
     line=`./list_instances_on_all_regions.sh | grep -i $2 | grep -i running`
     region=`echo $line | cut -d : -f 1`
     instance=`echo $line | cut -d : -f 3`
     ./disassociate_and_release_eip.sh $region $instance
-    ##incetance
     ./terminate_instance.sh $region $instance
     while true
     do
@@ -32,7 +30,6 @@ if [ $1 = "aws" ]; then
     	fi
     	echo "Waiting for the instance state to terminated"
     done
-    ##vpc
     line=`cat available-regions.txt | grep -i $2`
 	region=`echo $line | cut -d : -f 1`
 	name=`echo $line | cut -d : -f 3`
@@ -40,10 +37,13 @@ if [ $1 = "aws" ]; then
     cd ..
 elif [ $1 = "azure" ]; then
     cd $1
+    ./sbin/delete_cluster.sh settings.sh $2 
     cd ..
 elif [ $1 = "gcp" ]; then
     cd $1
     source ./settings.sh
-
+    tag=`cat available-regions.txt | grep -i $2 | cut -d ":" -f 2`
+    zone=`cat available-regions.txt | grep -i $2 | cut -d ":" -f 1`
+    ./delete_instance.sh $tag $zone
     cd ..
 fi
