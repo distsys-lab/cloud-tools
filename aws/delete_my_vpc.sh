@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 source ./settings.sh
 if [ $# -lt 2 ]; then
->---echo 'usage: region-name friendly-name'
->---exit 1
+	echo 'usage: region-name friendly-name'
+	exit 1
 fi
 
 is_dryrun=''
