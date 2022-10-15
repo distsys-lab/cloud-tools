@@ -34,11 +34,13 @@ cluster_config=(
 )
 
 ### List of available regions ###
-#Paris
-#Tokyo
-#Paulo
-#Sydney
-#Virginia
+region_list=(
+    Paris
+    Tokyo
+    Paulo
+    Sydney
+    Virginia
+)
 
 ### List of available Cloud Service Provider ###
 cloud_list=(
@@ -46,6 +48,3 @@ cloud_list=(
     "azure"
     "gcp"
 )
-aws_vm_username=ubuntu
-azure_vm_username=ubuntu
-gcp_vm_username=$USER
