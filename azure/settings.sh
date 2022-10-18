@@ -1,4 +1,4 @@
-source ../global_config.txt
+source ../global_config.sh
 ## Resource group settings
 resource_group_name=$resource_name_prefix
 ## Location options: az account list-locations --output table

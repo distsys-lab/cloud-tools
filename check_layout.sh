@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./global_config.txt
+source ./global_config.sh
 
 search_ideal_layout () {
     match_cnt=0

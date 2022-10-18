@@ -1,8 +1,8 @@
 # Global config
 ### Set it up for you
 
-# Resource Management Name
-### We can use "-" only one time in Azure rule
+# Resource Name
+### You can use "-" at most once due to Azure's naming policy
 resource_name_prefix="hoge-hoge"
 
 # SSH config
@@ -11,12 +11,12 @@ ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 
 # Instance user name
 aws_vm_username=ubuntu # Do not change
-azure_vm_username=ubuntu # Suit yourself
-gcp_vm_username=hoge # hoge@gmail.com (Follow your gmail address)
+azure_vm_username=ubuntu # Choose as you like
+gcp_vm_username=hoge # The local part of your gmail address
 
 # Cluster config
-### Default available cloud and region combinations.
-### Delete the "#" where you want the instance to stand.
+### Available cloud and region combinations.
+### Delete "#" where you want the instance to run.
 cluster_config=(
     #"aws,Paris"
     #"aws,Tokyo"
@@ -44,7 +44,7 @@ region_list=(
     "Virginia"
 )
 
-# List of available Cloud Service Provider
+# List of available cloud service providers
 cloud_list=(
     "aws"
     "azure"

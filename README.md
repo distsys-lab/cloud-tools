@@ -30,12 +30,12 @@ See [gcp-tools](https://github.com/distsys-lab/cloud-tools/tree/main/gcp-tools) 
 ## Quick start
 First, create settings for all cloud instances.
 ```
-cp global_config_default.txt global_config.txt
+cp global_config_default.sh global_config.sh
 ```
-Next, rewrite `global_config.txt` according to the instructions.
+Next, rewrite `global_config.sh` according to the instructions.
 Similarly, rewrite `*/settings.sh` according to the support in the file.
 
-Once all configuration files have been filled in, you can configure the cluster across each cloud according to `global_config.txt` by entering the following command.
+Once all configuration files have been filled in, you can configure the cluster across each cloud according to `global_config.sh` by entering the following command.
 
 ```
 ./create_cluster.sh

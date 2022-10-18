@@ -1,1 +1,3 @@
 */*.log
+global_config.sh
+hosts_list.txt

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-source ./global_config.txt
+source ./global_config.sh
 
 ./instance_dispenser.sh
-echo setup aws instnces
+echo setup aws instances
 cd aws
 (
 ./create_my_vpcs_on_all_regions.sh
@@ -11,14 +11,14 @@ cd aws
 ) >> aws.log 
 cd ..
 
-echo setup azure instnces
+echo setup azure instances
 cd azure 
 (
 ./sbin/create_cluster.sh settings.sh
 ) >> azure.log 
 cd ..
 
-echo setup gcp instnces
+echo setup gcp instances
 cd gcp
 (
 ./create_all_instances.sh
