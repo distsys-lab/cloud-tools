@@ -29,7 +29,7 @@ do
       --name ${rule_name} \
       --protocol TCP \
       --priority 1500 \
-      --destination-port-range '10000' "
+      --destination-port-range '10000-65535' "
 
   log "Executing: $cmd"
   run_cmd $cmd

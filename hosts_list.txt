@@ -1,0 +1,4 @@
+ubuntu:azure-Tokyo:20.222.225.31
+koya:gcp-virginia:TERMINATED
+koya:gcp-sydney:TERMINATED
+koya:gcp-paulo:34.95.181.59

@@ -17,7 +17,8 @@ done
 while true
 do
 	flag=1
-	for r in `./list_instances_on_all_regions.sh`
+	status=`./list_instances_on_all_regions.sh`
+	for r in $states
 		do
 			state=`echo $r | cut -d : -f 4`
 			if [ $state != "terminated" ]; then
@@ -26,8 +27,8 @@ do
 			fi
 			flag=0
 		done
-	./list_instances_on_all_regions.sh
-	if [ $flag -eq 0 ]; then
+	if [ $flag -eq 0 ] || [ $states | wc -l -eq 0]; then
+		echo "All instances terminated"
 		break
 	fi
 	echo "Waiting for the instance state to terminated"
