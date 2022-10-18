@@ -21,9 +21,9 @@ vm_username=$azure_vm_username
 vm_image="UbuntuLTS"
 ## VM size options are different across locations: az vm list-sizes --location <location> --output table
 ## Uses the value under name / Name
-vm_size="Standard_D4_v3"
+vm_size="Standard_B1s"
 # Accelerated Network Options: true for Standard_D4_v3
-vm_acc_network="true"
+vm_acc_network="false"
 ## Disk options:
 ## Standard_LRS (for HDD)
 ## Premium_LRS 
