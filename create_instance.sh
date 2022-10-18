@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./global_config.txt
+source ./global_config.sh
 
 if [ -z $1 ] || [ -z $2 ]; then
     echo "Error: Argument value is missing.";

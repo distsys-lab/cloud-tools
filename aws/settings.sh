@@ -1,4 +1,4 @@
-source ../global_config.txt
+source ../global_config.sh
 # this prefix will be added to all resources that will be created
 name_prefix=my-bft
 if [ -n $resource_name_prefix ]; then
@@ -14,7 +14,7 @@ pubkey_path=$HOME/.ssh/id_rsa.pub
 if [ -n $ssh_pubkey_path ]; then
     keypair_path=$ssh_pubkey_path
 fi
-# The host's user name. Do not change this
+# The host's user name. Do not change this.
 vm_username=ubuntu
 if [ -n $aws_vm_username ]; then
     vm_username=$aws_vm_username

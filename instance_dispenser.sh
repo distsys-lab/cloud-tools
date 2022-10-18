@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./global_config.txt
+source ./global_config.sh
 
 for i in ${cloud_list[@]};
 do

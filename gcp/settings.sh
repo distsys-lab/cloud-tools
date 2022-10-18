@@ -1,4 +1,4 @@
-source ../global_config.txt
+source ../global_config.sh
 # Choose the image you want to use
 ### Choose this carefully. Some images cannot be used in certain areas.
 
