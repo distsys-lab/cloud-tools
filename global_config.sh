@@ -2,7 +2,7 @@
 
 # Resource Management Name
 ### xxxxx-xxxxx (We can use "-" only one time in Azure rule)
-resource_name_prefix="koya-bft"
+resource_name_prefix="koya-test"
 
 # SSH config
 ssh_key_path="$HOME/.ssh/id_rsa"
@@ -19,18 +19,18 @@ cluster_config=(
     #"aws,Paris"
     #"aws,Tokyo"
     #"aws,Paulo"
-    "aws,Sydney"
+    #"aws,Sydney"
     #"aws,Virginia"
     #"azure,Paris"
     #"azure,Tokyo"
-    "azure,Paulo"
+    #"azure,Paulo"
     #"azure,Sydney"
     #"azure,Virginia"
-    "gcp,Paris"
+    #"gcp,Paris"
     #"gcp,Tokyo" 
     #"gcp,Paulo" 
     #"gcp,Sydney"
-    "gcp,Virginia"
+    #"gcp,Virginia"
 )
 
 ### List of available regions ###

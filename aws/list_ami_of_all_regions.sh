@@ -2,7 +2,7 @@
 
 #set -x
 source ./settings.sh
-regions=$region_list
+regions=available-regions.txt
 
 build_date=`date +%Y-`
 search_words_prefix=$os_image_type
