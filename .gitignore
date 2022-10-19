@@ -2,4 +2,5 @@
 global_config.sh
 hosts_list.txt
 */*.txt
-!available-regions.txt
+!aws/available-regions.txt
+!aws/available-images.txt

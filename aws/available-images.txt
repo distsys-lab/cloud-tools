@@ -1,0 +1,5 @@
+eu-west-3:ami-018de3a6e45331551:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-18
+ap-northeast-1:ami-0d745f1ee4bb88b89:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-18
+sa-east-1:ami-07e7afb5e1e58e8da:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-18
+ap-southeast-2:ami-030a8d0e06463671c:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-18
+us-east-1:ami-01d08089481510ba2:Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-10-18
