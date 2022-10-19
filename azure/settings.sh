@@ -18,7 +18,7 @@ vm_public_key=$ssh_pubkey_path
 vm_username=$azure_vm_username
 ## VM image options: az vm image list --output table
 ## Uses the value under Urn or UrnAlias
-vm_image="UbuntuLTS"
+vm_image="Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest" #"UbuntuLTS"
 ## VM size options are different across locations: az vm list-sizes --location <location> --output table
 ## Uses the value under name / Name
 vm_size="Standard_B1s"

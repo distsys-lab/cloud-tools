@@ -1,0 +1,4 @@
+ubuntu:aws-Sydney:3.24.10.177
+ubuntu:azure-Paulo:20.226.57.192
+kouyan120706_gmail_com:gcp-virginia:35.221.44.151
+kouyan120706_gmail_com:gcp-paris:34.155.104.253

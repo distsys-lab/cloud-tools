@@ -1,8 +1,10 @@
 source ../global_config.sh
+# 
+project_name=koya-shiozaki
+
 # Choose the image you want to use
 ### Choose this carefully. Some images cannot be used in certain areas.
-
-image_type=https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-arm64-v20220927
+image_type=projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20221015
 
 # Choose the machin you want to use
 ### Choose this carefully. Some machine cannot be used in certain areas.
