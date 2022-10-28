@@ -15,7 +15,6 @@ if [ $1 = "aws" ]; then
     friendly_name=`cat available-regions.txt | grep -i $2 | cut -d ":" -f 3`
     ./create_my_vpc.sh $region_name $friendly_name
     ami=`cat available-images.txt | grep -i $region_name | cut -d ":" -f 2`
-    echo -------------------$region_name $friendly_name $ami
     ./run_instance.sh $region_name $friendly_name $ami
     cd ..
 elif [ $1 = "azure" ]; then
