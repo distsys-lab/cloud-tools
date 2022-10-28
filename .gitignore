@@ -1,6 +1,6 @@
-*/*.log
+**/*.log
+**/*.ip
+**/*.txt
+!**/available-regions.txt
+!**/available-images.txt
 global_config.sh
-hosts_list.txt
-*/*.txt
-!aws/available-regions.txt
-!aws/available-images.txt

@@ -1,48 +1,50 @@
 # Global config
+### Set it up for you
 
-# Resource Management Name
-### xxxxx-xxxxx (We can use "-" only one time in Azure rule)
-resource_name_prefix="koya-test"
+# Resource Name
+### You can use "-" at most once due to Azure's naming policy
+resource_name_prefix="hoge-hoge"
 
 # SSH config
 ssh_key_path="$HOME/.ssh/id_rsa"
 ssh_pubkey_path="$HOME/.ssh/id_rsa.pub"
 
 # Instance user name
-aws_vm_username=ubuntu
-azure_vm_username=ubuntu
-gcp_vm_username=kouyan120706_gmail_com
+aws_vm_username=ubuntu # Do not change
+azure_vm_username=ubuntu # Choose as you like
+gcp_vm_username=hoge_gmail_com # hoge@gmail.com (Follow your gmail address)
 
 # Cluster config
+### Available cloud and region combinations.
+### Delete "#" where you want the instance to run.
 cluster_config=(
-    #"cloud,region"
     #"aws,Paris"
-    "aws,Tokyo"
+    #"aws,Tokyo"
     #"aws,Paulo"
     #"aws,Sydney"
     #"aws,Virginia"
     #"azure,Paris"
-    "azure,Tokyo"
+    #"azure,Tokyo"
     #"azure,Paulo"
     #"azure,Sydney"
     #"azure,Virginia"
     #"gcp,Paris"
-    "gcp,Tokyo" 
+    #"gcp,Tokyo" 
     #"gcp,Paulo" 
     #"gcp,Sydney"
     #"gcp,Virginia"
 )
 
-### List of available regions ###
+# List of available regions
 region_list=(
-    Paris
-    Tokyo
-    Paulo
-    Sydney
-    Virginia
+    "Paris"
+    "Tokyo"
+    "Paulo"
+    "Sydney"
+    "Virginia"
 )
 
-### List of available Cloud Service Provider ###
+# List of available cloud service providers
 cloud_list=(
     "aws"
     "azure"

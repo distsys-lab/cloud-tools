@@ -1,2 +1,0 @@
-2022年 10月 28日 金曜日 11:12:14 JST: Executing: az vm list-ip-addresses   --resource-group koya-test   --output table
-
