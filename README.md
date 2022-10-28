@@ -86,3 +86,12 @@ Deleting or adding a single instance will cause discrepancies with the ideal pla
 ```
 
 This will output the necessary operations you should do.
+
+## Hint
+`./delete_cluster.sh` or `./delete_instance.sh aws 〇〇` will give you the following error message, but don't worry about it.
+
+```
+An error occurred (CannotDelete) when calling the DeleteSecurityGroup operation: the specified group: "sg-xxxxxxxxxxx" name: "default" cannot be deleted by a user
+Done delete cluster
+```
+
