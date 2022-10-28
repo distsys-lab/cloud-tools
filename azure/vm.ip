@@ -1,5 +1,4 @@
-2022年 10月 19日 水曜日 17:59:54 JST: Executing: az vm list-ip-addresses   --resource-group koya-bft   --output table
+2022年 10月 28日 金曜日 09:22:28 JST: Executing: az vm list-ip-addresses   --resource-group koya-test   --output table
 VirtualMachine    PublicIPAddresses    PrivateIPAddresses
 ----------------  -------------------  --------------------
-Tokyo             20.27.50.1           10.5.0.4
-Paulo             20.226.57.192        10.4.0.4
+Tokyo             20.78.195.58         10.5.0.4

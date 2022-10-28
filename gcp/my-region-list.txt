@@ -1,2 +1,1 @@
-europe-west9-a:paris
-us-east4-a:virginia
+asia-northeast1-a:tokyo
