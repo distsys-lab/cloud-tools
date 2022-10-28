@@ -3,3 +3,4 @@
 **/*.txt
 !**/available-regions.txt
 !**/available-images.txt
+global_config.sh
