@@ -16,7 +16,6 @@ cd ..
 cat aws/my-hosts-list.txt | sed s/=/:/g | while read line
 do
 	echo "$aws_vm_username:aws-$line"
-
 done
 
 tail -n +4 azure/vm.ip | sed -e 's/  */:/g' | cut -d ':' -f 1,2 | while read line
