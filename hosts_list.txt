@@ -1,4 +1,0 @@
-ubuntu:aws-Paris:13.36.215.124
-ubuntu:aws-Tokyo:35.76.200.105
-ubuntu:azure-Tokyo:20.243.231.41
-kouyan120706_gmail_com:gcp-tokyo:34.84.104.79
